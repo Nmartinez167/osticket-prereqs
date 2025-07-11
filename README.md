@@ -22,10 +22,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
+-Deployed a Windows 10 virtual machine in Microsoft Azure to host an internal helpdesk solution.
+-Installed and configured IIS (Internet Information Services) with necessary features including CGI and URL Rewrite.
+- Set up and integrated PHP 7.3.8 and MySQL 5.5, including configuring environment paths and database credentials.
+- Installed and configured osTicket v1.15.8, including directory setup, file permission adjustments, and initial web-based setup.
 - Item 5
 
 <h2>Installation Steps</h2>
