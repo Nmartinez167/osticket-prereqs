@@ -22,14 +22,19 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
--Deployed a Windows 10 virtual machine in Microsoft Azure to host an internal helpdesk solution.
--Installed and configured IIS (Internet Information Services) with necessary features including CGI and URL Rewrite.
-- Set up and integrated PHP 7.3.8 and MySQL 5.5, including configuring environment paths and database credentials.
-- Installed and configured osTicket v1.15.8, including directory setup, file permission adjustments, and initial web-based setup.
-- Enabled critical PHP extensions (imap, intl, opcache) and registered PHP with IIS via PHP Manager.
--Used Remote Desktop, HeidiSQL, and the Windows GUI to manage server tasks, perform troubleshooting, and verify successful deployment.
+MySQL: Configured and maintained the database backend for osTicket, ensuring efficient data storage and retrieval.
 
--Followed best practices for permission management and system cleanup post-installation to ensure a secure and stable environment.
+HeidiSQL: Utilized as a graphical interface to manage and interact with the MySQL database, enabling streamlined administration and query execution.
+
+PHP: Implemented server-side scripting using PHP to support dynamic content generation and backend logic for osTicket's web interface.
+
+PHP Manager: Employed PHP Manager within the IIS Management Console to configure and manage PHP settings for improved performance and compatibility.
+
+Visual C++ Redistributable (VC Redist): Installed and configured necessary runtime components to support PHP and other IIS-related dependencies.
+
+URL Rewrite Module (IIS): Applied URL rewriting and redirection rules to enhance user navigation and ensure compatibility with osTicket's routing requirements.
+
+
 
 <h2>Installation Steps</h2>
 
