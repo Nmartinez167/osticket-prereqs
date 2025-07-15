@@ -80,6 +80,8 @@ Installation Steps:
 -Connect to the session and create a database named osTicket.
 
 <h2>3.Install and Configure osTicket on the Web Server</h2>
+<img width="708" height="338" alt="image" src="https://github.com/user-attachments/assets/5166195d-bdc8-48e0-8141-12d7aa466c83" />
+
 -Install osTicket v1.15.8:
 
 -Download osTicket.
