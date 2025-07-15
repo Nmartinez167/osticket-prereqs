@@ -137,7 +137,7 @@ To C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 -User Portal: http://localhost/osTicket/
 
-<h2>7. Secure Installation<h2>
+<h2>7. Secure Installation
 -Delete the setup directory: C:\inetpub\wwwroot\osTicket\setup
 
 -Set read-only permission on:
