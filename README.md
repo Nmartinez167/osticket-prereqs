@@ -77,7 +77,7 @@ Installation Steps:
 
 -Connect to the session and create a database named osTicket.
 
-3. Install and Configure osTicket on the Web Server
+3. <h2>Install and Configure osTicket on the Web Server<h2>
 -Install osTicket v1.15.8:
 
 -Download osTicket.
