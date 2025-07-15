@@ -141,6 +141,8 @@ To C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 -User Portal: http://localhost/osTicket/
 
+<img width="1196" height="433" alt="Screenshot 2025-07-03 033936" src="https://github.com/user-attachments/assets/8f4681e0-6fcc-4c61-b46b-8f0733a2386e" />
+
 <h2>7. Secure Installation</h2>
 -Delete the setup directory: C:\inetpub\wwwroot\osTicket\setup
 
