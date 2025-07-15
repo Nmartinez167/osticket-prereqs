@@ -45,105 +45,102 @@ Install and enable IIS (Internet Information Services) on your Windows system. B
 2. Install Required Software
 Installation Steps:
 
-Install PHP Manager
+-Install PHP Manager
 
-Install VC Redistributable
+-Install VC Redistributable
 
-Install URL Rewrite
+-Install URL Rewrite
 
-Install PHP:
+-Install PHP:
 
-Create the directory C:\PHP.
+-Create the directory C:\PHP.
 
-Extract PHP files into the C:\PHP folder.
+-Extract PHP files into the C:\PHP folder.
 
-Register PHP within IIS.
+-Register PHP within IIS.
 
-Reload IIS (open IIS Manager, stop and start the server).
+-Reload IIS (open IIS Manager, stop and start the server).
 
-Install MySQL:
+-Install MySQL:
 
-Choose Typical Setup.
+-Choose Typical Setup.
 
-Run the Configuration Wizard → select Standard Configuration.
+-Run the Configuration Wizard → select Standard Configuration.
 
-Set and remember your root password.
+-Set and remember your root password.
 
-Install HeidiSQL:
+-Install HeidiSQL:
 
-Launch HeidiSQL.
+-Launch HeidiSQL.
 
-Create a new session using credentials root/your_password.
+-Create a new session using credentials root/your_password.
 
-Connect to the session and create a database named osTicket.
+-Connect to the session and create a database named osTicket.
 
 3. Install and Configure osTicket on the Web Server
-Install osTicket v1.15.8:
+-Install osTicket v1.15.8:
 
-Download osTicket.
+-Download osTicket.
 
-Extract the upload folder and copy it to C:\inetpub\wwwroot.
+-Extract the upload folder and copy it to C:\inetpub\wwwroot.
 
-Rename the folder from upload to osTicket.
+-Rename the folder from upload to osTicket.
 
-Reload IIS (stop and start the server again).
+-Reload IIS (stop and start the server again).
 
-Verify osTicket:
+-Verify osTicket:
 
-In IIS, go to Sites → Default Web Site → osTicket.
+-In IIS, go to Sites → Default Web Site → osTicket.
 
-Click “Browse *:80” to confirm the installation is accessible.
+-Click “Browse *:80” to confirm the installation is accessible.
 
 4. Enable PHP Features and Set Permissions
-In PHP Manager, enable the following extensions:
+-In PHP Manager, enable the following extensions:
 
-php_imap.dll
+-php_imap.dll
 
-php_intl.dll
+-php_intl.dll
 
-php_opcache.dll
+-php_opcache.dll
 
-Rename the configuration file:
+-Rename the configuration file:
 
-Rename:
+-Rename:
 From C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
-Set permissions on ost-config.php:
+-Set permissions on ost-config.php:
 
-Disable inheritance and remove all existing permissions.
+-Disable inheritance and remove all existing permissions.
 
-Add new permission: Everyone → Full Control.
+-Add new permission: Everyone → Full Control.
 
 5. Finalize Installation in Browser
-Continue setup via browser.
+-Continue setup via browser.
 
-Enter helpdesk name and default support email address.
+-Enter helpdesk name and default support email address.
 
-Use the following database details:
+-Use the following database details:
 
-Database Name: osTicket
+-Database Name: osTicket
 
-Username: root
+-Username: root
 
-Password: your_password
+-Password: your_password
 
-Click “Install Now!”
+-Click “Install Now!”
 
 6. Test osTicket Accessibility on Localhost
-Verify the URLs:
+-Verify the URLs:
 
-Agent Login: http://localhost/osTicket/scp/login.php
+-Agent Login: http://localhost/osTicket/scp/login.php
 
-User Portal: http://localhost/osTicket/
+-User Portal: http://localhost/osTicket/
 
 7. Secure Installation
-Delete the setup directory: C:\inetpub\wwwroot\osTicket\setup
+-Delete the setup directory: C:\inetpub\wwwroot\osTicket\setup
 
-Set read-only permission on:
+-Set read-only permission on:
 C:\inetpub\wwwroot\osTicket\include\ost-config.php
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
