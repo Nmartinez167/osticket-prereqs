@@ -77,7 +77,7 @@ Installation Steps:
 
 -Connect to the session and create a database named osTicket.
 
-3. <h2>Install and Configure osTicket on the Web Server<h2>
+<h2>3.Install and Configure osTicket on the Web Server<h2>
 -Install osTicket v1.15.8:
 
 -Download osTicket.
@@ -94,7 +94,7 @@ Installation Steps:
 
 -Click “Browse *:80” to confirm the installation is accessible.
 
-4. Enable PHP Features and Set Permissions
+<h2>4.Enable PHP Features and Set Permissions<h2>
 -In PHP Manager, enable the following extensions:
 
 -php_imap.dll
@@ -115,7 +115,7 @@ To C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 -Add new permission: Everyone → Full Control.
 
-5. Finalize Installation in Browser
+<h2>5.Finalize Installation in Browser<h2>
 -Continue setup via browser.
 
 -Enter helpdesk name and default support email address.
@@ -130,14 +130,14 @@ To C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 -Click “Install Now!”
 
-6. Test osTicket Accessibility on Localhost
+<h2>6.Test osTicket Accessibility on Localhost<h2>
 -Verify the URLs:
 
 -Agent Login: http://localhost/osTicket/scp/login.php
 
 -User Portal: http://localhost/osTicket/
 
-7. Secure Installation
+<h2>7. Secure Installation<h2>
 -Delete the setup directory: C:\inetpub\wwwroot\osTicket\setup
 
 -Set read-only permission on:
