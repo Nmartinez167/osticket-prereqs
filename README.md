@@ -43,7 +43,8 @@ URL Rewrite Module (IIS): Applied URL rewriting and redirection rules to enhance
 Install and enable IIS (Internet Information Services) on your Windows system. Be sure to include both the application features and the IIS Management Console.
 
 2. <h2>Install Required Software</h2>
-<img width="616" height="216" alt="image" src="https://github.com/user-attachments/assets/e35cbac9-595e-4bec-aad9-70c262a671d6" />
+<img width="616" height="216" alt="image" src="https://github.com/user-attachments/assets/e35cbac9-595e-4bec-aad9-70c262a671d6" /> <img width="616" height="196" alt="image" src="https://github.com/user-attachments/assets/aae61414-2d6a-438f-a1ce-df06bd837b66" />
+
 
 Installation Steps:
 
