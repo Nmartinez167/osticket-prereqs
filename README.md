@@ -62,6 +62,8 @@ Installation Steps:
 -Reload IIS (open IIS Manager, stop and start the server).
 
 -Install MySQL:
+<img width="617" height="482" alt="Screenshot 2025-07-03 025844" src="https://github.com/user-attachments/assets/e108501e-fc54-4fca-9ffb-21e4979fe938" />
+
 
 -Choose Typical Setup.
 
