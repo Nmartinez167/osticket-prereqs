@@ -38,25 +38,110 @@ URL Rewrite Module (IIS): Applied URL rewriting and redirection rules to enhance
 
 <h2>Installation Steps</h2>
 
-<p>
-<img width="617" height="482" alt="Screenshot 2025-07-03 025844" src="https://github.com/user-attachments/assets/212d5c83-1e33-48ef-bffe-9641ec60b315" />
 
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+1. Set Up Windows 10 as a Web Server
+Install and enable IIS (Internet Information Services) on your Windows system. Be sure to include both the application features and the IIS Management Console.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+2. Install Required Software
+Installation Steps:
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Install PHP Manager
+
+Install VC Redistributable
+
+Install URL Rewrite
+
+Install PHP:
+
+Create the directory C:\PHP.
+
+Extract PHP files into the C:\PHP folder.
+
+Register PHP within IIS.
+
+Reload IIS (open IIS Manager, stop and start the server).
+
+Install MySQL:
+
+Choose Typical Setup.
+
+Run the Configuration Wizard → select Standard Configuration.
+
+Set and remember your root password.
+
+Install HeidiSQL:
+
+Launch HeidiSQL.
+
+Create a new session using credentials root/your_password.
+
+Connect to the session and create a database named osTicket.
+
+3. Install and Configure osTicket on the Web Server
+Install osTicket v1.15.8:
+
+Download osTicket.
+
+Extract the upload folder and copy it to C:\inetpub\wwwroot.
+
+Rename the folder from upload to osTicket.
+
+Reload IIS (stop and start the server again).
+
+Verify osTicket:
+
+In IIS, go to Sites → Default Web Site → osTicket.
+
+Click “Browse *:80” to confirm the installation is accessible.
+
+4. Enable PHP Features and Set Permissions
+In PHP Manager, enable the following extensions:
+
+php_imap.dll
+
+php_intl.dll
+
+php_opcache.dll
+
+Rename the configuration file:
+
+Rename:
+From C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+To C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+Set permissions on ost-config.php:
+
+Disable inheritance and remove all existing permissions.
+
+Add new permission: Everyone → Full Control.
+
+5. Finalize Installation in Browser
+Continue setup via browser.
+
+Enter helpdesk name and default support email address.
+
+Use the following database details:
+
+Database Name: osTicket
+
+Username: root
+
+Password: your_password
+
+Click “Install Now!”
+
+6. Test osTicket Accessibility on Localhost
+Verify the URLs:
+
+Agent Login: http://localhost/osTicket/scp/login.php
+
+User Portal: http://localhost/osTicket/
+
+7. Secure Installation
+Delete the setup directory: C:\inetpub\wwwroot\osTicket\setup
+
+Set read-only permission on:
+C:\inetpub\wwwroot\osTicket\include\ost-config.php
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
