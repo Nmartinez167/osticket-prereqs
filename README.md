@@ -42,7 +42,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 
-<h2>Installation Steps</h2>
+<h2>Installation steps and overview </h2>
 
 
 1. Set Up Windows 10 as a Web Server
