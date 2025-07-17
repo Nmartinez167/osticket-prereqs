@@ -22,17 +22,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-<li><strong>MySQL::</strong> Configured and maintained the database backend for osTicket, ensuring efficient data storage and retrieval.
+<li><strong>MySQL:</strong> Configured and maintained the database backend for osTicket, ensuring efficient data storage and retrieval.
 
-HeidiSQL: Utilized as a graphical interface to manage and interact with the MySQL database, enabling streamlined administration and query execution.
+<li><strong>HeidiSQL:</strong> Utilized as a graphical interface to manage and interact with the MySQL database, enabling streamlined administration and query execution.
 
-PHP: Implemented server-side scripting using PHP to support dynamic content generation and backend logic for osTicket's web interface.
+<li><strong>PHP:</strong> Implemented server-side scripting using PHP to support dynamic content generation and backend logic for osTicket's web interface.
 
-PHP Manager: Employed PHP Manager within the IIS Management Console to configure and manage PHP settings for improved performance and compatibility.
+<li><strong>PHP Manager:</strong> Employed PHP Manager within the IIS Management Console to configure and manage PHP settings for improved performance and compatibility.
 
-Visual C++ Redistributable (VC Redist): Installed and configured necessary runtime components to support PHP and other IIS-related dependencies.
+<li><strong>Visual C++ Redistributable (VC Redist):</strong> Installed and configured necessary runtime components to support PHP and other IIS-related dependencies.
 
-URL Rewrite Module (IIS): Applied URL rewriting and redirection rules to enhance user navigation and ensure compatibility with osTicket's routing requirements.
+<li><strong>URL Rewrite Module (IIS):</strong> Applied URL rewriting and redirection rules to enhance user navigation and ensure compatibility with osTicket's routing requirements.
 
 
 
