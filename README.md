@@ -22,7 +22,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-MySQL: Configured and maintained the database backend for osTicket, ensuring efficient data storage and retrieval.
+<li><strong>MySQL::</strong> Configured and maintained the database backend for osTicket, ensuring efficient data storage and retrieval.
 
 HeidiSQL: Utilized as a graphical interface to manage and interact with the MySQL database, enabling streamlined administration and query execution.
 
