@@ -44,19 +44,19 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>OVERVIEW</h2>
 
--Configure Windows 10 OS to function as a web server.
+<li><strong>Configure Windows 10 OS to function as a web server.
 
--Install required prerequisite software: MySQL, HeidiSQL, PHP, PHP Manager, Visual C++ Redistributable, and URL Rewrite.
+<li><strong>Install required prerequisite software: MySQL, HeidiSQL, PHP, PHP Manager, Visual C++ Redistributable, and URL Rewrite.
 
--Install osTicket and verify it is accessible as a website hosted on the local web server.
+<li><strong>Install osTicket and verify it is accessible as a website hosted on the local web server.
 
--Enable necessary features and set appropriate permissions for osTicket.
+<li><strong>Enable necessary features and set appropriate permissions for osTicket.
 
--Finalize the installation by configuring email settings and connecting to the MySQL database.
+<li><strong>Finalize the installation by configuring email settings and connecting to the MySQL database.
 
--Verify that osTicket is accessible via localhost.
+<li><strong>Verify that osTicket is accessible via localhost.
 
--Remove or secure files that may present security vulnerabilities.
+<li><strong>Remove or secure files that may present security vulnerabilities.
 
 
 
