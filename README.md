@@ -6,10 +6,6 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -62,48 +58,81 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 2. <h2>Install Required Software</h2>
-<img width="616" height="216" alt="image" src="https://github.com/user-attachments/assets/e35cbac9-595e-4bec-aad9-70c262a671d6" /> 
 
-Installation Steps:
+<h2>Installation Steps:</h2>
 
--Install PHP Manager
+<h2>-Install PHP Manager</h2>
 
--Install VC Redistributable
 
--Install URL Rewrite
 
--Install PHP:
+<img width="640" height="528" alt="Screenshot 2025-10-08 132424" src="https://github.com/user-attachments/assets/f1beeb69-08de-46f3-b3ea-521d0fa15c85" />
 
--Create the directory C:\PHP.
+<h2>-Install VC Redistributable</h2>
 
--Extract PHP files into the C:\PHP folder.
 
--Register PHP within IIS.
 
--Reload IIS (open IIS Manager, stop and start the server).
+<img width="706" height="437" alt="Screenshot 2025-10-08 133400" src="https://github.com/user-attachments/assets/55f620d9-a1aa-496b-911b-95d17c2a4d2e" />
 
--Install MySQL:
+<h2>-Install URL Rewrite</h2>
 
--Choose Typical Setup.
 
--Run the Configuration Wizard → select Standard Configuration.
 
--Set and remember your root password.
+<img width="675" height="532" alt="Screenshot 2025-10-08 132556" src="https://github.com/user-attachments/assets/40f10532-5db3-43e8-8840-48fe39801544" />
 
--Install HeidiSQL:
 
--Launch HeidiSQL.
+<h2>-Create the directory C:\PHP.</h2>
 
--Create a new session using credentials root/your_password.
 
--Connect to the session and create a database named osTicket.
+
+<img width="1061" height="602" alt="Screenshot 2025-10-08 132852" src="https://github.com/user-attachments/assets/3a5b8d61-3c8a-4885-adde-44ef284cad98" />
+
+<h2>-Extract PHP files into the C:\PHP folder.</h2>
+
+
+
+<img width="1252" height="695" alt="Screenshot 2025-10-08 133129" src="https://github.com/user-attachments/assets/8179086e-55ea-4f16-81fe-00cf4ad7ba4c" />
+
+<h2>-Register PHP within IIS.</h2>
+
+
+
+<img width="1311" height="722" alt="Screenshot 2025-10-08 134016" src="https://github.com/user-attachments/assets/2d77f4ba-4088-4fa6-b014-6081bb52a8e2" />
+
+<h2>-Reload IIS (open IIS Manager, stop and start the server).</h2>
+
+<h2>-Choose Typical Setup.</h2>
+
+<h2>-Run the Configuration Wizard → select Standard Configuration.</h2>
+
+<h2>-Set and remember your root password.</h2>
+
+<h2>-Install HeidiSQL:</h2>
+
+
+
+<img width="737" height="627" alt="Screenshot 2025-10-08 141243" src="https://github.com/user-attachments/assets/5718e6ea-1f45-418f-a38f-a568213e90da" />
+
+<h2>-Launch HeidiSQL.</h2>
+
+<h2>-Create a new session using credentials root/your_password.</h2>
+
+
+
+<img width="897" height="637" alt="Screenshot 2025-10-08 141446" src="https://github.com/user-attachments/assets/7a34618e-cb3e-4649-8cc6-11b6f2a0dc87" />
+
+<h2>-Connect to the session and create a database named osTicket.</h2>
+
+
+
+<img width="1266" height="792" alt="Screenshot 2025-10-08 141643" src="https://github.com/user-attachments/assets/b2fc45eb-3177-445a-869b-5180b6480a48" />
+-Download osTicket.
 
 <h2>3.Install and Configure osTicket on the Web Server</h2>
-<img width="708" height="338" alt="image" src="https://github.com/user-attachments/assets/5166195d-bdc8-48e0-8141-12d7aa466c83" />
+
 
 -Install osTicket v1.15.8:
 
--Download osTicket.
+
 
 -Extract the upload folder and copy it to C:\inetpub\wwwroot.
 
@@ -121,8 +150,9 @@ Installation Steps:
 -In PHP Manager, enable the following extensions:
 
 -php_imap.dll
+<img width="1087" height="702" alt="Screenshot 2025-10-08 135757" src="https://github.com/user-attachments/assets/aeee9b4d-0a52-4705-8af5-9fb7f5e3d045" />
 
--php_intl.dll
+-php_int<img
 
 -php_opcache.dll
 
@@ -160,7 +190,12 @@ To C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 -User Portal: http://localhost/osTicket/
 
-<img width="1196" height="433" alt="Screenshot 2025-07-03 033936" src="https://github.com/user-attachments/assets/8f4681e0-6fcc-4c61-b46b-8f0733a2386e" />
+<img width="1500" height="427" alt="Screenshot 2025-10-08 142127" src="https://github.com/user-attachments/assets/aa5956b4-5941-4027-b8c1-5ac582a2540a" />
+
+
+<img width="1182" height="910" alt="Screenshot 2025-10-08 141935" src="https://github.com/user-attachments/assets/6c0edbed-7a66-451d-9f57-7e56bf1ed875" />
+
+
 
 <h2>7. Secure Installation</h2>
 -Delete the setup directory: C:\inetpub\wwwroot\osTicket\setup
