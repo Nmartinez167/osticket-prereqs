@@ -204,3 +204,25 @@ To C:\inetpub\wwwroot\osTicket\include\ost-config.php
 C:\inetpub\wwwroot\osTicket\include\ost-config.php
 </p>
 <p>
+
+<h2>Conclusion</h2>
+
+Deploying osTicket on Windows 10 Web Server
+
+Through this project, I successfully transformed a Windows 10 environment into a fully functional web server capable of hosting the osTicket helpdesk system. The setup process involved installing and configuring several essential components, including IIS (Internet Information Services), PHP, MySQL, HeidiSQL, PHP Manager, Visual C++ Redistributable, and IIS URL Rewrite Module.
+
+Once all prerequisites were in place, I deployed osTicket, configured the database connection, and registered the necessary administrator email and credentials. Proper permissions were assigned to ensure osTicket could interact securely with system resources, and IIS features were enabled to support PHP-based web applications.
+
+After completing the installation, I verified that osTicket was accessible locally (via localhost) and fully operational as a web-based support ticket platform. To finalize, I performed security cleanup tasks—removing installation files and sensitive setup scripts to mitigate potential vulnerabilities.
+
+<h2>This project demonstrates my ability to</h2>
+
+- Configure and manage a Windows-based web server environment.
+
+- Install and integrate database-driven web applications.
+
+- Apply security and permission management best practices.
+
+- Troubleshoot and validate web server functionality.
+
+- Overall, this deployment highlights my hands-on experience in system administration, web hosting, and technical support platform implementation.
