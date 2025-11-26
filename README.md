@@ -44,14 +44,18 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h3>Installation Steps</h3>
 <ol>
-  <li>Install PHP Manager.</li>
+  <li>Install PHP Manager</li>
   <li>Install VC Redist.</li>
   <li>Install Rewrite.</li>
   <li>Install PHP:
     <ul>
       <li>Create the directory C:\PHP.</li>
-      <li>Extract PHP files into C:\PHP directory.</li>
-      <li>Register PHP from within IIS.</li>
+      <li>Extract PHP files into C:\PHP directory.</li><img width="1252" height="695" alt="Screenshot 2025-10-08 133129" src="https://github.com/user-attachments/assets/5971a8e7-757b-43ff-8c11-9a84b68389f7" />
+
+      
+      
+      
+  <li>Register PHP from within IIS.</li>
       <li>Reload IIS (Open IIS, Stop and Start the server).</li>
     </ul>
   </li>
@@ -61,12 +65,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     </ul>
   </li>
   <li>Install HeidiSQL:
-    <ul>
+  <ul>
       <li>Open HeidiSQL.</li>
-      <li>Create a new session, root/secret_password.</li>
-      <li>Connect to the session.</li>
-      <li>Create a database called "osTicket".</li>
-    </ul>
+      <li>Create a new session, root/secret_password.</li><img width="897" height="637" alt="Screenshot 2025-10-08 141446" src="https://github.com/user-attachments/assets/2e7f7366-e9b5-4bdd-801e-be013ded7fd2" />
+
+  <li>Connect to the session.</li>
+      <li>Create a database called "osTicket".</li><img width="1266" height="792" alt="Screenshot 2025-10-08 141643" src="https://github.com/user-attachments/assets/e008138b-ebb6-412c-9507-8a195a84c4b9" />
+
   </li>
 </ol>
 
@@ -89,7 +94,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <ol>
   <li>Enable Extensions in PHP Manager:</li>
   <ul>
-    <li>Enable: php_imap.dll</li>
+    <li>Enable: php_imap.dll</li><img width="1087" height="702" alt="Screenshot 2025-10-08 135757" src="https://github.com/user-attachments/assets/da45f163-445f-4206-9835-8f0a1c1d3f6b" />
     <li>Enable: php_intl.dll</li>
     <li>Enable: php_opcache.dll</li>
   </ul>
