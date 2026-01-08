@@ -37,11 +37,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <li><strong>URL Rewrite Module (IIS):</strong> Applied URL rewriting and redirection rules to enhance user navigation and ensure compatibility with osTicket's routing requirements.
 
 
-<h2>1. Prepare The Windows 10 OS by turning it into a web server</h2>
-<p>Install & Enable IIS (Internet Information Services) on the Windows computer, including application features and IIS Management Console.</p>
-
-<h2>2. Install Prerequisite Programs</h2>
-
+<h3>1. Create a resource group within azure portal</h3>
+<img width="1173" height="817" alt="Screenshot 2025-12-23 085139" src="https://github.com/user-attachments/assets/bbab9dea-0752-4370-8c9d-44c6ecd58c1f" />
+<h3> Next we will create our virtual machine within our azure account.
+  
 <h3>Installation Steps</h3>
 <ol>
   <li>Install PHP Manager</li>
