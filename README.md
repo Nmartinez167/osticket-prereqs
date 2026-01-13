@@ -39,8 +39,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h3>1. Create a resource group within azure portal</h3>
 <img width="1173" height="817" alt="Screenshot 2025-12-23 085139" src="https://github.com/user-attachments/assets/bbab9dea-0752-4370-8c9d-44c6ecd58c1f" />
-<h3> Next we will create a storage account within our azure account.
-  <img width="963" height="842" alt="Screenshot 2025-12-23 085543" src="https://github.com/user-attachments/assets/0aa65c2f-6513-4c9c-af2b-d39f70d59863" />
+<h3> Next we will create a virtual machine within our azure account make sure it is in the appropriate subscription and resource group.
+<img width="1004" height="819" alt="Screenshot 2026-01-13 081342" src="https://github.com/user-attachments/assets/efcc6fbc-7d97-4793-b588-61a3777e84f9" />
+
 
 <h3>Installation Steps</h3>
 <ol>
