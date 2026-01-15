@@ -41,6 +41,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img width="1173" height="817" alt="Screenshot 2025-12-23 085139" src="https://github.com/user-attachments/assets/bbab9dea-0752-4370-8c9d-44c6ecd58c1f" />
 <h3> Next we will create a virtual machine within our azure account make sure it is in the appropriate subscription and resource group.
 <img width="1004" height="819" alt="Screenshot 2026-01-13 081342" src="https://github.com/user-attachments/assets/efcc6fbc-7d97-4793-b588-61a3777e84f9" />
+<h3>1. Now that we have created the windows virtual machine we take the public ip adress and use remote desktop to connect to it.
+<img width="1528" height="432" alt="Screenshot 2026-01-15 090926" src="https://github.com/user-attachments/assets/6108a7ba-bd44-4bb3-8aff-bbe8522593d7" />
+<img width="1366" height="544" alt="Screenshot 2026-01-15 092735" src="https://github.com/user-attachments/assets/cf9dab37-40b3-48bd-9e29-b416922dbafa" />
 
 
 <h3>Installation Steps</h3>
