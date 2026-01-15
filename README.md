@@ -39,11 +39,22 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h3>1. Create a resource group within azure portal</h3>
 <img width="1173" height="817" alt="Screenshot 2025-12-23 085139" src="https://github.com/user-attachments/assets/bbab9dea-0752-4370-8c9d-44c6ecd58c1f" />
+
 <h3> Next we will create a virtual machine within our azure account make sure it is in the appropriate subscription and resource group.
+  
 <img width="1004" height="819" alt="Screenshot 2026-01-13 081342" src="https://github.com/user-attachments/assets/efcc6fbc-7d97-4793-b588-61a3777e84f9" />
 <h3>1. Now that we have created the windows virtual machine we take the public ip adress and use remote desktop to connect to it.
+
+  
 <img width="1528" height="432" alt="Screenshot 2026-01-15 090926" src="https://github.com/user-attachments/assets/6108a7ba-bd44-4bb3-8aff-bbe8522593d7" />
 <img width="1366" height="544" alt="Screenshot 2026-01-15 092735" src="https://github.com/user-attachments/assets/cf9dab37-40b3-48bd-9e29-b416922dbafa" />
+
+Next we will Install / Enable IIS in Windows WITH CGI by navigating to the control panel on our windows virtual machine this will allow us to use os-ticket.
+<img width="1032" height="561" alt="Screenshot 2026-01-15 154456" src="https://github.com/user-attachments/assets/2891c3cf-ade6-4821-8bda-f5a651c4e28b" />
+
+<img width="1321" height="572" alt="Screenshot 2026-01-15 155008" src="https://github.com/user-attachments/assets/dc9f59f3-9f8b-475b-b894-56a6c4628397" />
+
+<img width="835" height="571" alt="Screenshot 2026-01-15 155306" src="https://github.com/user-attachments/assets/01652198-1021-4263-929d-43e00240c22b" />
 
 
 <h3>Installation Steps</h3>
