@@ -100,6 +100,12 @@ Now that we have registered PHP within IIS on our windows virtual machine we wil
 Next we will take this upload folder that came with Osticket installation files and copy it into c:\inetpub\wwwroot folder
 <img width="1457" height="780" alt="Screenshot 2026-01-30 161457" src="https://github.com/user-attachments/assets/93351bd1-77ad-47ca-b551-b161ab31a223" />
 <img width="1442" height="751" alt="Screenshot 2026-01-30 161608" src="https://github.com/user-attachments/assets/cf61823d-fbd2-412f-bd94-2b2eed44bb50" />
+<img width="1332" height="711" alt="Screenshot 2026-01-30 162152" src="https://github.com/user-attachments/assets/38f91f6f-5c97-4f61-8e4a-5be20f1008e2" />
+<img width="1758" height="792" alt="Screenshot 2026-01-30 162536" src="https://github.com/user-attachments/assets/6093108e-8036-42d9-af61-b5bdfeb6610f" />
+<img width="751" height="535" alt="Screenshot 2026-01-30 162706" src="https://github.com/user-attachments/assets/f80926f8-d2d9-40b9-b45c-f42ba8235f38" />
+After copying the upload folder to the "wwwroot" folder we will rename it to osTicket
+
+<img width="1362" height="721" alt="Screenshot 2026-01-30 163200" src="https://github.com/user-attachments/assets/796411ce-5eb2-4876-9776-faf21a024ff0" />
 
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
