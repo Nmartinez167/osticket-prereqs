@@ -106,11 +106,11 @@ Next we will take this upload folder that came with Osticket installation files 
 
 
 After copying the upload folder to the "wwwroot" folder we will rename it to osTicket
+<img width="1362" height="721" alt="Screenshot 2026-01-30 163200" src="https://github.com/user-attachments/assets/d3152bc3-4a26-4b6e-b770-638a2e7fd360" />
 
 Once again we will restart IIS within out Virtual Machine to actualize the few changes we made 
-<img width="1442" height="751" alt="Screenshot 2026-01-30 163758" src="https://github.com/user-attachments/assets/de0fdf1a-347e-4028-8641-2f2f85479c3f" />
 
-<img width="1362" height="721" alt="Screenshot 2026-01-30 163200" src="https://github.com/user-attachments/assets/796411ce-5eb2-4876-9776-faf21a024ff0" />
+<img width="1442" height="751" alt="Screenshot 2026-01-30 163758" src="https://github.com/user-attachments/assets/9b499f50-1312-4ac0-892b-ffa091256db2" />
 
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
