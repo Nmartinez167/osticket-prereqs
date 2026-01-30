@@ -103,7 +103,12 @@ Next we will take this upload folder that came with Osticket installation files 
 <img width="1332" height="711" alt="Screenshot 2026-01-30 162152" src="https://github.com/user-attachments/assets/38f91f6f-5c97-4f61-8e4a-5be20f1008e2" />
 <img width="1758" height="792" alt="Screenshot 2026-01-30 162536" src="https://github.com/user-attachments/assets/6093108e-8036-42d9-af61-b5bdfeb6610f" />
 <img width="751" height="535" alt="Screenshot 2026-01-30 162706" src="https://github.com/user-attachments/assets/f80926f8-d2d9-40b9-b45c-f42ba8235f38" />
+
+
 After copying the upload folder to the "wwwroot" folder we will rename it to osTicket
+
+Once again we will restart IIS within out Virtual Machine to actualize the few changes we made 
+<img width="1442" height="751" alt="Screenshot 2026-01-30 163758" src="https://github.com/user-attachments/assets/de0fdf1a-347e-4028-8641-2f2f85479c3f" />
 
 <img width="1362" height="721" alt="Screenshot 2026-01-30 163200" src="https://github.com/user-attachments/assets/796411ce-5eb2-4876-9776-faf21a024ff0" />
 
