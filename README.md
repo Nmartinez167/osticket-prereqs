@@ -57,84 +57,35 @@ Next we will Install / Enable IIS in Windows WITH CGI by navigating to the contr
 <img width="835" height="571" alt="Screenshot 2026-01-15 155306" src="https://github.com/user-attachments/assets/01652198-1021-4263-929d-43e00240c22b" />
 
 
-<h3>Installation Steps</h3>
-<ol>
-  <li>Install PHP Manager</li>
-  <li>Install VC Redist.</li>
-  <li>Install Rewrite.</li>
-  <li>Install PHP:
-    <ul>
-      <li>Create the directory C:\PHP.</li>
-      <li>Extract PHP files into C:\PHP directory.</li><img width="1252" height="695" alt="Screenshot 2025-10-08 133129" src="https://github.com/user-attachments/assets/5971a8e7-757b-43ff-8c11-9a84b68389f7" />
+Next we will install PHP manager 
+<img width="1172" height="653" alt="day1" src="https://github.com/user-attachments/assets/40a0af56-b5d1-408d-98a3-ef65ef9fdcc7" />
+<img width="1433" height="775" alt="day 2" src="https://github.com/user-attachments/assets/820b9b79-119a-45d8-926e-05459e509aca" />
 
-      
-      
-      
-  <li>Register PHP from within IIS.</li>
-      <li>Reload IIS (Open IIS, Stop and Start the server).</li>
-    </ul>
-  </li>
-  <li>Install mySQL:
-    <ul>
-      <li>Typical Setup -> Launch Configuration Wizard -> Standard Configuration -> (create_secret_password).</li>
-    </ul>
-  </li>
-  <li>Install HeidiSQL:
-  <ul>
-      <li>Open HeidiSQL.</li>
-      <li>Create a new session, root/secret_password.</li><img width="897" height="637" alt="Screenshot 2025-10-08 141446" src="https://github.com/user-attachments/assets/2e7f7366-e9b5-4bdd-801e-be013ded7fd2" />
+Now we will istall URL Rewrite Module
 
-  <li>Connect to the session.</li>
-      <li>Create a database called "osTicket".</li><img width="1266" height="792" alt="Screenshot 2025-10-08 141643" src="https://github.com/user-attachments/assets/e008138b-ebb6-412c-9507-8a195a84c4b9" />
+<img width="1427" height="763" alt="day3" src="https://github.com/user-attachments/assets/5567e8c3-d65b-4950-8686-d578cc8d91c8" />
 
-  </li>
-</ol>
+Next Create the directory PHP on the windowns virtual machines C:Drive like so.
 
-<h2>3. Install osTicket and configure it as a website running on this web server</h2>
-<ol>
-  <li>Install osTicket v1.15.8:</li>
-  <ul>
-    <li>Download osTicket.</li>
-    <li>Extract and copy “upload” folder to C:\inetpub\wwwroot.</li>
-    <li>Within C:\inetpub\wwwroot, rename “upload” to “osTicket”.</li>
-    <li>Reload IIS (Open IIS, Stop and Start the server).</li>
-  </ul>
-  <li>Confirm osTicket is running through web server:</li>
-  <ul>
-    <li>Go to Sites -> Default -> osTicket -> “Browse *:80”.</li>
-  </ul>
-</ol>
+<img width="1562" height="837" alt="day4" src="https://github.com/user-attachments/assets/782376bb-c813-4a6e-9a4c-6828b0b24284" />
+<img width="1460" height="760" alt="DAY5" src="https://github.com/user-attachments/assets/a46e099d-9003-49ef-9711-36f15cabf9db" />
 
-<h2>4. Enable Features and assign permissions to osTicket</h2>
-<ol>
-  <li>Enable Extensions in PHP Manager:</li>
-  <ul>
-    <li>Enable: php_imap.dll</li><img width="1087" height="702" alt="Screenshot 2025-10-08 135757" src="https://github.com/user-attachments/assets/da45f163-445f-4206-9835-8f0a1c1d3f6b" />
-    <li>Enable: php_intl.dll</li>
-    <li>Enable: php_opcache.dll</li>
-  </ul>
-  <li>Rename ost-config.php:</li>
-  <ul>
-    <li>From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php</li>
-    <li>To: C:\inetpub\wwwroot\osTicket\include\ost-config.php</li>
-  </ul>
-  <li>Assign Permissions: ost-config.php</li>
-  <ul>
-    <li>Disable inheritance -> Remove All.</li>
-    <li>New Permissions -> Everyone -> All.</li>
-  </ul>
-</ol>
+Now we will extract the php manager files onto the folder named PHP we created earlier on the c:drive of our windows virtual machine.
 
-<h2>5. Complete installation by registering email and mySQL database</h2>
-<ol>
-  <li>Continue setting up osTicket in the browser (click Continue).</li>
-  <li>Name Helpdesk.</li>
-  <li>Default email (receives email from customers).</li>
-  <li>MySQL Database: osTicket.</li>
-  <li>MySQL Username: root.</li>
-  <li>MySQL Password: (**********).</li>
-  <li>Click “Install Now!”.</li>
-</ol>
+<img width="1447" height="768" alt="Day6" src="https://github.com/user-attachments/assets/59af6bfc-825f-42a0-bbb3-df07f802fd25" /> 
+
+The following step is to install Microsoft vc++
+
+<img width="1462" height="770" alt="day7" src="https://github.com/user-attachments/assets/74265067-733c-4223-bd97-2c9bbbfa2cdd" />
+
+Another dependancy we need to install is MySQL server 
+
+<img width="1507" height="792" alt="Screenshot 2026-01-29 145223" src="https://github.com/user-attachments/assets/660f5b94-1f5d-4379-bf41-30d4c274016a" />
+<img width="980" height="627" alt="Screenshot 2026-01-29 145533" src="https://github.com/user-attachments/assets/3b67c008-74be-4eea-9f2c-0229659f9134" />
+
+<img width="856" height="602" alt="Screenshot 2026-01-29 145854" src="https://github.com/user-attachments/assets/9e1da928-b1dc-4ebb-bbb0-ae388698ff0e" />
+
+<img width="1252" height="852" alt="Screenshot 2026-01-29 150206" src="https://github.com/user-attachments/assets/dc4a570c-ea3f-4f13-a223-69d0ae2a8151" />
 
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
