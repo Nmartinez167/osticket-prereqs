@@ -96,6 +96,11 @@ Now that we have installed MySQL server we will open IIS as as admin on our virt
 Now we will restart IIS (Stop and restart the web server)
 <img width="1461" height="764" alt="Screenshot 2026-01-30 155432" src="https://github.com/user-attachments/assets/524fea0e-3071-47f0-8c21-8bce85829898" />
 Now that we have registered PHP within IIS on our windows virtual machine we will begin istalling OsTicket (Ticketing software we will be using for end users)
+<img width="1033" height="752" alt="Screenshot 2026-01-30 160300" src="https://github.com/user-attachments/assets/15dad024-bcc3-4935-bd28-bf1fe7bc002b" />
+Next we will take this upload folder that came with Osticket installation files and copy it into c:\inetpub\wwwroot folder
+<img width="1457" height="780" alt="Screenshot 2026-01-30 161457" src="https://github.com/user-attachments/assets/93351bd1-77ad-47ca-b551-b161ab31a223" />
+<img width="1442" height="751" alt="Screenshot 2026-01-30 161608" src="https://github.com/user-attachments/assets/cf61823d-fbd2-412f-bd94-2b2eed44bb50" />
+
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
   <li>Test link for agents and end-users:</li>
