@@ -86,7 +86,16 @@ Another dependancy we need to install is MySQL server
 <img width="856" height="602" alt="Screenshot 2026-01-29 145854" src="https://github.com/user-attachments/assets/9e1da928-b1dc-4ebb-bbb0-ae388698ff0e" />
 
 <img width="1252" height="852" alt="Screenshot 2026-01-29 150206" src="https://github.com/user-attachments/assets/dc4a570c-ea3f-4f13-a223-69d0ae2a8151" />
+Now that we have installed MySQL server we will open IIS as as admin on our virtual machine to register PHP Within IIS
+<img width="1451" height="747" alt="qwewert" src="https://github.com/user-attachments/assets/b3fd19d4-5232-4179-b777-ea198223576e" />
 
+<img width="1436" height="747" alt="assddd" src="https://github.com/user-attachments/assets/dfdadd3d-4001-4da8-b4b4-62f2c588fd4b" />
+<img width="1032" height="482" alt="v" src="https://github.com/user-attachments/assets/f785de48-b9dc-479c-a4fe-d6466c1bdffc" />
+<img width="1037" height="691" alt="r" src="https://github.com/user-attachments/assets/a6aba362-c9eb-43d0-be0c-b20e5c81fbe0" />
+<img width="1028" height="637" alt="Screenshot 2026-01-30 153733" src="https://github.com/user-attachments/assets/05c11e74-44f8-49f7-b29f-fdd07bd81678" />
+Now we will restart IIS (Stop and restart the web server)
+<img width="1461" height="764" alt="Screenshot 2026-01-30 155432" src="https://github.com/user-attachments/assets/524fea0e-3071-47f0-8c21-8bce85829898" />
+Now that we have registered PHP within IIS on our windows virtual machine we will begin istalling OsTicket (Ticketing software we will be using for end users)
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
   <li>Test link for agents and end-users:</li>
