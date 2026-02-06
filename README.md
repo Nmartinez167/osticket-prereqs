@@ -112,6 +112,31 @@ Once again we will restart IIS within out Virtual Machine to actualize the few c
 
 <img width="1442" height="751" alt="Screenshot 2026-01-30 163758" src="https://github.com/user-attachments/assets/9b499f50-1312-4ac0-892b-ffa091256db2" />
 
+Now we navigate to the osTicket website by clicking on the tab in the IIS panel like so.
+<img width="1482" height="748" alt="g1" src="https://github.com/user-attachments/assets/bef74b02-7ba9-440a-8266-992560ae105d" />
+
+<img width="1267" height="1015" alt="g2" src="https://github.com/user-attachments/assets/329f504e-93cc-4bc0-9099-e283f7043179" />
+
+Notice some extensions arent activated yet so we will activate them by navigating to the PHP manager in the IIS tab under the osTicket folder to be able to use osTicket to its full potential.
+
+
+<img width="1483" height="761" alt="g3" src="https://github.com/user-attachments/assets/af5cf434-9d9a-4c55-a441-6dc92145c9c0" />
+
+<img width="1465" height="757" alt="g4" src="https://github.com/user-attachments/assets/cd6fe3a6-4adb-44ef-8453-6626e29c6f5f" />
+
+Click “Enable or disable an extension”
+Enable: php_imap.dll
+Enable: php_intl.dll
+Enable: php_opcache.dll
+ 
+<img width="1490" height="747" alt="g6" src="https://github.com/user-attachments/assets/654f4dac-793e-412a-85a8-d2fe44c48350" />
+
+ Now if we refresh the osTicket installation landing page we can see the changes were made.
+
+ 
+<img width="1215" height="892" alt="G7" src="https://github.com/user-attachments/assets/1707671a-9898-43e6-84d6-dce86a47d72f" />
+
+
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
   <li>Test link for agents and end-users:</li>
