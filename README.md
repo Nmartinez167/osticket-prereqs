@@ -93,15 +93,26 @@ Now that we have installed MySQL server we will open IIS as as admin on our virt
 <img width="1032" height="482" alt="v" src="https://github.com/user-attachments/assets/f785de48-b9dc-479c-a4fe-d6466c1bdffc" />
 <img width="1037" height="691" alt="r" src="https://github.com/user-attachments/assets/a6aba362-c9eb-43d0-be0c-b20e5c81fbe0" />
 <img width="1028" height="637" alt="Screenshot 2026-01-30 153733" src="https://github.com/user-attachments/assets/05c11e74-44f8-49f7-b29f-fdd07bd81678" />
+
+
 Now we will restart IIS (Stop and restart the web server)
+
 <img width="1461" height="764" alt="Screenshot 2026-01-30 155432" src="https://github.com/user-attachments/assets/524fea0e-3071-47f0-8c21-8bce85829898" />
+
 Now that we have registered PHP within IIS on our windows virtual machine we will begin istalling OsTicket (Ticketing software we will be using for end users)
 <img width="1033" height="752" alt="Screenshot 2026-01-30 160300" src="https://github.com/user-attachments/assets/15dad024-bcc3-4935-bd28-bf1fe7bc002b" />
+
+
 Next we will take this upload folder that came with Osticket installation files and copy it into c:\inetpub\wwwroot folder
+
 <img width="1457" height="780" alt="Screenshot 2026-01-30 161457" src="https://github.com/user-attachments/assets/93351bd1-77ad-47ca-b551-b161ab31a223" />
+
 <img width="1442" height="751" alt="Screenshot 2026-01-30 161608" src="https://github.com/user-attachments/assets/cf61823d-fbd2-412f-bd94-2b2eed44bb50" />
+
 <img width="1332" height="711" alt="Screenshot 2026-01-30 162152" src="https://github.com/user-attachments/assets/38f91f6f-5c97-4f61-8e4a-5be20f1008e2" />
+
 <img width="1758" height="792" alt="Screenshot 2026-01-30 162536" src="https://github.com/user-attachments/assets/6093108e-8036-42d9-af61-b5bdfeb6610f" />
+
 <img width="751" height="535" alt="Screenshot 2026-01-30 162706" src="https://github.com/user-attachments/assets/f80926f8-d2d9-40b9-b45c-f42ba8235f38" />
 
 
@@ -183,6 +194,14 @@ Now that we created a new session we will create a new database called osTicket 
 Now we go back to our osTicket installation page and enter the database name, username and the paswword as well.
 
 <img width="1317" height="1018" alt="cccccc" src="https://github.com/user-attachments/assets/8dca788e-35de-4361-89d6-b288f3fa66a4" />
+
+
+<img width="1332" height="997" alt="!!!!" src="https://github.com/user-attachments/assets/5321322b-f245-4dad-8a4c-c0f7bbd06a0e" />
+
+Success! we have installed osTicket we are ready to start using our ticketing system!
+
+
+<img width="1332" height="997" alt="!!!!" src="https://github.com/user-attachments/assets/79e6c897-3c7e-40b0-b791-1d072c3f00bf" />
 
 
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
