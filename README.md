@@ -136,6 +136,29 @@ Enable: php_opcache.dll
  
 <img width="1215" height="892" alt="G7" src="https://github.com/user-attachments/assets/1707671a-9898-43e6-84d6-dce86a47d72f" />
 
+Now that we have enabled those extensions we go to in file explorer to C drive> osTicket> include> ost-sampleconfig.php and remove the "sample" from the name.
+
+
+<img width="1457" height="792" alt="back2it" src="https://github.com/user-attachments/assets/95cf7d6a-f246-492e-ab19-37dc08bc99e5" /> 
+
+Next we will enable permissions to be able to create anywhere from supreme admin users to regular employees users as well.
+
+<img width="1368" height="913" alt="ber" src="https://github.com/user-attachments/assets/1edbe768-b14b-461b-90fb-d1225a356aab" />
+
+
+<img width="1218" height="717" alt="mmm" src="https://github.com/user-attachments/assets/3c3a3652-406f-4dff-be7c-34fcd43ad421" />
+
+
+<img width="1287" height="761" alt="treee" src="https://github.com/user-attachments/assets/082c9b94-1d13-4bb4-bf49-a40b2f653d66" />
+
+
+<img width="1398" height="781" alt="nnnnnnn" src="https://github.com/user-attachments/assets/4e89a436-98ab-4bfa-ac4b-6dbe608d0672" />
+
+
+<img width="1152" height="675" alt="vvvvv" src="https://github.com/user-attachments/assets/55935644-2a21-4ee5-974a-4de9c3d35ae6" />
+
+We gave everyone full access which ois not recommended to do but for this tutorial we will give everyone full acess and later set roles,teams, etc.
+
 
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
