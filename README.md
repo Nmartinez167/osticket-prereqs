@@ -159,6 +159,27 @@ Next we will enable permissions to be able to create anywhere from supreme admin
 
 We gave everyone full access which ois not recommended to do but for this tutorial we will give everyone full acess and later set roles,teams, etc.
 
+Now we go back to the osTicket landing page and continue our installation.
+
+<img width="1278" height="1040" alt="llllllllll" src="https://github.com/user-attachments/assets/148fac7d-3ade-4a9c-bf72-007d292dff2c" />
+
+ Once you have filled out all the information for your helpdesk we will go back to our osTicket installation files and install Heidi Sql to be able to connect our database for osTicket
+
+ 
+<img width="976" height="857" alt="bbbbbb" src="https://github.com/user-attachments/assets/c6413fdf-d929-4db3-b40e-3070d1701b1b" />
+
+
+<img width="752" height="576" alt="kkkkkk" src="https://github.com/user-attachments/assets/0ee1be17-bf4a-4543-969e-fa5668e8fa7a" />
+
+With heidi sql we will be able to make a connection between our database for osTicket.
+
+
+<img width="1017" height="690" alt="fffffff" src="https://github.com/user-attachments/assets/40000d11-4b4b-4707-b811-025a57068a3e" />
+
+Now that we created a new session we will create a new database called osTicket make sure it is spelled correctly.
+
+<img width="1267" height="773" alt="eeeeeeeeeeeee" src="https://github.com/user-attachments/assets/de13495b-80bb-4a43-931f-d8add5548d0a" />
+
 
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
