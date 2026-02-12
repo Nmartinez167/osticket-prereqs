@@ -180,6 +180,10 @@ Now that we created a new session we will create a new database called osTicket 
 
 <img width="1267" height="773" alt="eeeeeeeeeeeee" src="https://github.com/user-attachments/assets/de13495b-80bb-4a43-931f-d8add5548d0a" />
 
+Now we go back to our osTicket installation page and enter the database name, username and the paswword as well.
+
+<img width="1317" height="1018" alt="cccccc" src="https://github.com/user-attachments/assets/8dca788e-35de-4361-89d6-b288f3fa66a4" />
+
 
 <h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
