@@ -69,7 +69,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img width="1172" height="653" alt="day1" src="https://github.com/user-attachments/assets/40a0af56-b5d1-408d-98a3-ef65ef9fdcc7" />
 <img width="1433" height="775" alt="day 2" src="https://github.com/user-attachments/assets/820b9b79-119a-45d8-926e-05459e509aca" />
 
-<h3>Now we will istall URL Rewrite Module</h3>
+<h3>Now we will install URL Rewrite Module</h3>
 
 <img width="1427" height="763" alt="day3" src="https://github.com/user-attachments/assets/5567e8c3-d65b-4950-8686-d578cc8d91c8" />
 
@@ -78,7 +78,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img width="1562" height="837" alt="day4" src="https://github.com/user-attachments/assets/782376bb-c813-4a6e-9a4c-6828b0b24284" />
 <img width="1460" height="760" alt="DAY5" src="https://github.com/user-attachments/assets/a46e099d-9003-49ef-9711-36f15cabf9db" />
 
-<h3>Now we will extract the php manager files onto the folder named PHP we created earlier on the c:drive of our windows virtual machine.</h3>
+<h3>Now we will extract the php manager files onto the folder named PHP we created earlier on the C:drive of our windows virtual machine.</h3>
 
 <img width="1447" height="768" alt="Day6" src="https://github.com/user-attachments/assets/59af6bfc-825f-42a0-bbb3-df07f802fd25" /> 
 
@@ -86,7 +86,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img width="1462" height="770" alt="day7" src="https://github.com/user-attachments/assets/74265067-733c-4223-bd97-2c9bbbfa2cdd" />
 
-<h3>Another dependancy we need to install is MySQL server</h3>
+<h3>Another dependency we need to install is MySQL server</h3>
 
 <img width="1507" height="792" alt="Screenshot 2026-01-29 145223" src="https://github.com/user-attachments/assets/660f5b94-1f5d-4379-bf41-30d4c274016a" />
 <img width="980" height="627" alt="Screenshot 2026-01-29 145533" src="https://github.com/user-attachments/assets/3b67c008-74be-4eea-9f2c-0229659f9134" />
@@ -107,7 +107,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img width="1461" height="764" alt="Screenshot 2026-01-30 155432" src="https://github.com/user-attachments/assets/524fea0e-3071-47f0-8c21-8bce85829898" />
 
-<h3>Now that we have registered PHP within IIS on our windows virtual machine we will begin istalling OsTicket (Ticketing software we will be using for end users)</h3>
+<h3>Now that we have registered PHP within IIS on our windows virtual machine we will begin installing OsTicket (Ticketing software we will be using for end users)</h3>
 <img width="1033" height="752" alt="Screenshot 2026-01-30 160300" src="https://github.com/user-attachments/assets/15dad024-bcc3-4935-bd28-bf1fe7bc002b" />
 
 
@@ -143,10 +143,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img width="1465" height="757" alt="g4" src="https://github.com/user-attachments/assets/cd6fe3a6-4adb-44ef-8453-6626e29c6f5f" />
 
-Click “Enable or disable an extension”
+<h3>Click “Enable or disable an extension”
 Enable: php_imap.dll
 Enable: php_intl.dll
-Enable: php_opcache.dll
+Enable: php_opcache.dll</h3>
  
 <img width="1490" height="747" alt="g6" src="https://github.com/user-attachments/assets/654f4dac-793e-412a-85a8-d2fe44c48350" />
 
@@ -176,9 +176,9 @@ Enable: php_opcache.dll
 
 <img width="1152" height="675" alt="vvvvv" src="https://github.com/user-attachments/assets/55935644-2a21-4ee5-974a-4de9c3d35ae6" />
 
-We gave everyone full access which ois not recommended to do but for this tutorial we will give everyone full acess and later set restrictions between roles,teams, etc.
+<h3>We gave everyone full access which is not recommended to do but for this tutorial we will give everyone full acess and later set restrictions between roles,teams, etc.</h3>
 
-Now we go back to the osTicket landing page and continue our installation.
+<h3>Now we go back to the osTicket landing page and continue our installation.</h3>
 
 <img width="1278" height="1040" alt="llllllllll" src="https://github.com/user-attachments/assets/148fac7d-3ade-4a9c-bf72-007d292dff2c" />
 
