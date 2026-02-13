@@ -57,7 +57,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img width="1528" height="432" alt="Screenshot 2026-01-15 090926" src="https://github.com/user-attachments/assets/6108a7ba-bd44-4bb3-8aff-bbe8522593d7" />
 <img width="1366" height="544" alt="Screenshot 2026-01-15 092735" src="https://github.com/user-attachments/assets/cf9dab37-40b3-48bd-9e29-b416922dbafa" />
 
-<h3>Next we will Install / Enable IIS in Windows WITH CGI by navigating to the control panel on our windows virtual machine this will allow us to use our virtual machine as a web sever for os-ticket.</h3>
+<h3>Next we will Install / Enable IIS in Windows WITH CGI by navigating to the control panel on our windows virtual machine this will allow us to use our virtual machine as a web server for os-ticket.</h3>
 <img width="1032" height="561" alt="Screenshot 2026-01-15 154456" src="https://github.com/user-attachments/assets/2891c3cf-ade6-4821-8bda-f5a651c4e28b" />
 
 <img width="1321" height="572" alt="Screenshot 2026-01-15 155008" src="https://github.com/user-attachments/assets/dc9f59f3-9f8b-475b-b894-56a6c4628397" />
