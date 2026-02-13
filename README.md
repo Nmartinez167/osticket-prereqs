@@ -212,7 +212,7 @@ Enable: php_opcache.dll</h3>
 <img width="1332" height="997" alt="!!!!" src="https://github.com/user-attachments/assets/79e6c897-3c7e-40b0-b791-1d072c3f00bf" />
 
 
-<h2>6. Confirm osTicket can be reached by users on LocalHost</h2>
+<h2> Confirm osTicket can be reached by users on LocalHost</h2>
 <ol>
   <li>Test link for agents and end-users:</li>
   <ul>
@@ -221,7 +221,7 @@ Enable: php_opcache.dll</h3>
   </ul>
 </ol>
 
-<h2>7. Clean up files that pose a security risk</h2>
+<h2> Clean up files that pose a security risk</h2>
 <ol>
   <li>Delete: C:\inetpub\wwwroot\osTicket\setup.</li>
   <li>Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php.</li>
