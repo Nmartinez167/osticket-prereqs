@@ -37,12 +37,20 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <li><strong>URL Rewrite Module (IIS):</strong> Applied URL rewriting and redirection rules to enhance user navigation and ensure compatibility with osTicket's routing requirements.
 
 
-<h3>1. Create a resource group within azure portal</h3>
+<h3> Create a resource group within azure portal</h3>
+<ol>
+  <ul>
 <img width="1173" height="817" alt="Screenshot 2025-12-23 085139" src="https://github.com/user-attachments/assets/bbab9dea-0752-4370-8c9d-44c6ecd58c1f" />
 
+
+
 <h3> Next we will create a virtual machine within our azure account make sure it is in the appropriate subscription and resource group.
+
+
   
 <img width="1004" height="819" alt="Screenshot 2026-01-13 081342" src="https://github.com/user-attachments/assets/efcc6fbc-7d97-4793-b588-61a3777e84f9" />
+
+
 <h3>1. Now that we have created the windows virtual machine we take the public ip adress and use remote desktop to connect to it.
 
   
