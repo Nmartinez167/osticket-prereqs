@@ -176,7 +176,7 @@ Enable: php_opcache.dll</h3>
 
 <img width="1152" height="675" alt="vvvvv" src="https://github.com/user-attachments/assets/55935644-2a21-4ee5-974a-4de9c3d35ae6" />
 
-<h3>We gave everyone full access which is not recommended to do but for this tutorial we will give everyone full acess and later set restrictions between roles,teams, etc.</h3>
+<h3>We gave everyone full access which is not recommended to do but for this tutorial we will give everyone full access and later set restrictions between roles,teams, etc.</h3>
 
 <h3>Now we go back to the osTicket landing page and continue our installation.</h3>
 
