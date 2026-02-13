@@ -199,7 +199,7 @@ Enable: php_opcache.dll</h3>
 
 <img width="1267" height="773" alt="eeeeeeeeeeeee" src="https://github.com/user-attachments/assets/de13495b-80bb-4a43-931f-d8add5548d0a" />
 
-<h3>Now we go back to our osTicket installation page and enter the database name, username and the paswword as well.</h3>
+<h3>Now we go back to our osTicket installation page and enter the database name, username and the password as well.</h3>
 
 <img width="1317" height="1018" alt="cccccc" src="https://github.com/user-attachments/assets/8dca788e-35de-4361-89d6-b288f3fa66a4" />
 
@@ -220,6 +220,9 @@ Enable: php_opcache.dll</h3>
     <li>End Users URL: <a href="http://localhost/osTicket/">http://localhost/osTicket/</a></li>
   </ul>
 </ol>
+
+<img width="1113" height="665" alt="hpn" src="https://github.com/user-attachments/assets/5b719abd-3fe6-4289-b311-b73528628bcc" />
+
 
 <h2> Clean up files that pose a security risk</h2>
 <ol>
