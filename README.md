@@ -66,11 +66,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <h3>Next we will install PHP manager</h3>
+
+Installed and configured PHP Manager for IIS to support the deployment of the osTicket help desk application. PHP Manager simplified PHP configuration within IIS by enabling management of PHP versions, extensions, FastCGI settings, error reporting, and runtime configuration through a graphical interface. This ensured that osTicket met its PHP requirements, improved application stability, and streamlined ongoing server administration and troubleshooting.
+
 <img width="1172" height="653" alt="day1" src="https://github.com/user-attachments/assets/40a0af56-b5d1-408d-98a3-ef65ef9fdcc7" />
 <img width="1433" height="775" alt="day 2" src="https://github.com/user-attachments/assets/820b9b79-119a-45d8-926e-05459e509aca" />
 
 <h3>Now we will install URL Rewrite Module</h3>
 
+Implemented URL Rewrite rules in IIS to transform complex application URLs into clean, user-friendly routes, improving usability, maintainability, and search engine optimization while preserving existing application functionality.
 <img width="1427" height="763" alt="day3" src="https://github.com/user-attachments/assets/5567e8c3-d65b-4950-8686-d578cc8d91c8" />
 
 <h3>Next Create the directory PHP on the windowns virtual machines C:Drive like so.</h3>
@@ -84,9 +88,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h3>The following step is to install Microsoft vc++</h3>
 
+Configured the Windows Server environment with the appropriate Microsoft Visual C++ runtime libraries required by the PHP version used by osTicket, enabling reliable application operation and extension compatibility.
 <img width="1462" height="770" alt="day7" src="https://github.com/user-attachments/assets/74265067-733c-4223-bd97-2c9bbbfa2cdd" />
 
-<h3>Another dependency we need to install is MySQL server</h3>
+<h3>Another dependency we need to install is MySQL server</h3> 
+ Deployed and configured MySQL Server to support osTicket, managing application data storage, user information, and ticket lifecycle records.
 
 <img width="1507" height="792" alt="Screenshot 2026-01-29 145223" src="https://github.com/user-attachments/assets/660f5b94-1f5d-4379-bf41-30d4c274016a" />
 <img width="980" height="627" alt="Screenshot 2026-01-29 145533" src="https://github.com/user-attachments/assets/3b67c008-74be-4eea-9f2c-0229659f9134" />
