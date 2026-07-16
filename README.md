@@ -230,10 +230,6 @@ Enable: php_opcache.dll</h3>
 <img width="1113" height="665" alt="hpn" src="https://github.com/user-attachments/assets/5b719abd-3fe6-4289-b311-b73528628bcc" />
 
 
-<h2> Clean up files that pose a security risk</h2>
-<ol>
-  <li>Delete: C:\inetpub\wwwroot\osTicket\setup.</li>
-  <li>Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php.</li>
-</ol>
+
 
 
