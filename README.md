@@ -4,6 +4,8 @@
 
 <h1>osTicket - Prerequisites and Installation</h1>
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+You can find all the necessary installation files for this project below:  
+(https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 
 
 <h2>Environments and Technologies Used</h2>
@@ -17,6 +19,22 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Windows 10</b> (21H2)
 
 <h2>List of Prerequisites</h2>
+
+- Azure subscription
+
+- Azure Virtual Machine with the following configuration:
+
+   - OS: Windows 10
+
+  - vCPUs:4
+
+  - Name: osticket-vm
+
+  - Username:
+
+  - Password:
+
+- Remote Desktop Client
 
 <li><strong>MySQL:</strong> Configured and maintained the database backend for osTicket, ensuring efficient data storage and retrieval.
 
