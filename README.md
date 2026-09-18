@@ -36,26 +36,21 @@ You can find all the necessary installation files for this project below:
 
 - Remote Desktop Client
 
-<li><strong>MySQL:</strong> Configured and maintained the database backend for osTicket, ensuring efficient data storage and retrieval.
+- mySQL: The database which will contain the data from osTicket.
 
 
+- HeidiSQL: The database manager or GUI we will use to interact with the database.
 
-<li><strong>HeidiSQL:</strong> Utilized as a graphical interface to manage and interact with the MySQL database, enabling streamlined administration and query execution.
+- PHP: The server-side scripting language used to display the HTML webpages of osTicket.
 
+- PHP Manager: A feature that will allow us to interact with the scripts through the Management Console.
 
-<li><strong>PHP:</strong> Implemented server-side scripting using PHP to support dynamic content generation and backend logic for osTicket's web interface.
+- VC Redist: Provides the necessary runtime components for running C++ applications, essential for certain dependencies of PHP and IIS.
 
-
-<li><strong>PHP Manager:</strong> Employed PHP Manager within the IIS Management Console to configure and manage PHP settings for improved performance and compatibility.
-
-
-<li><strong>Visual C++ Redistributable (VC Redist):</strong> Installed and configured necessary runtime components to support PHP and other IIS-related dependencies.
+- Rewrite: (URL Rewrite Module for IIS) Allows for the customization of URLs, enabling redirection and URL rewriting for osTicket.
 
 
-<li><strong>URL Rewrite Module (IIS):</strong> Applied URL rewriting and redirection rules to enhance user navigation and ensure compatibility with osTicket's routing requirements.
-
-
-<h3> Create a resource group within azure portal</h3>
+<h3> Create a resource group within azure portal and name it Osticket</h3>
 <ol>
   <ul>
 <img width="1173" height="817" alt="Screenshot 2025-12-23 085139" src="https://github.com/user-attachments/assets/bbab9dea-0752-4370-8c9d-44c6ecd58c1f" />
@@ -85,7 +80,10 @@ You can find all the necessary installation files for this project below:
 
 <h3>Next we will install PHP manager</h3>
 
-Installed and configured PHP Manager for IIS to support the deployment of the osTicket help desk application. PHP Manager simplified PHP configuration within IIS by enabling management of PHP versions, extensions, FastCGI settings, error reporting, and runtime configuration through a graphical interface. This ensured that osTicket met its PHP requirements, improved application stability, and streamlined ongoing server administration and troubleshooting.
+-Create the directory C:\PHP.
+-Extract PHP files into C:\PHP directory.
+-Register PHP from within IIS.
+-Reload IIS (Open IIS, Stop and Start the server).
 
 <img width="1172" height="653" alt="day1" src="https://github.com/user-attachments/assets/40a0af56-b5d1-408d-98a3-ef65ef9fdcc7" />
 <img width="1433" height="775" alt="day 2" src="https://github.com/user-attachments/assets/820b9b79-119a-45d8-926e-05459e509aca" />
@@ -110,7 +108,10 @@ Configured the Windows Server environment with the appropriate Microsoft Visual 
 <img width="1462" height="770" alt="day7" src="https://github.com/user-attachments/assets/74265067-733c-4223-bd97-2c9bbbfa2cdd" />
 
 <h3>Another dependency we need to install is MySQL server</h3> 
- Deployed and configured MySQL Server to support osTicket, managing application data storage, user information, and ticket lifecycle records.
+<ul>
+      <li>Typical Setup -> Launch Configuration Wizard -> Standard Configuration -> (create_secret_password).</li>
+    </ul>
+  </li>
 
 <img width="1507" height="792" alt="Screenshot 2026-01-29 145223" src="https://github.com/user-attachments/assets/660f5b94-1f5d-4379-bf41-30d4c274016a" />
 <img width="980" height="627" alt="Screenshot 2026-01-29 145533" src="https://github.com/user-attachments/assets/3b67c008-74be-4eea-9f2c-0229659f9134" />
