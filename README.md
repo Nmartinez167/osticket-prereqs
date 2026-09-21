@@ -16,40 +16,27 @@ You can find all the necessary installation files for this project below:
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 11</b> (21H2)
 
 <h2>List of Prerequisites</h2>
 
-- Azure subscription
 
+- Azure subscription
+- Azure Virtual Machine with the following configuration:
+  - OS: Windows 10
+  - vCPUs:4
+  - Name: osticket-vm
+  - Username:
+  - Password:
 - Remote Desktop Client
 
-- mySQL: The database which will contain the data from osTicket.
-
-- HeidiSQL: The database manager or GUI we will use to interact with the database.
-
-- PHP: The server-side scripting language used to display the HTML webpages of osTicket.
-
-- PHP Manager: A feature that will allow us to interact with the scripts through the Management Console.
-
-- VC Redist: Provides the necessary runtime components for running C++ applications, essential for certain dependencies of PHP and IIS.
-
-- Rewrite: (URL Rewrite Module for IIS) Allows for the customization of URLs, enabling redirection and URL rewriting for osTicket.
-
-
-<h3> Create a resource group within azure portal and name it Osticket</h3>
-<ol>
-  <ul>
-<img width="50%" height="50%" alt="Screenshot 2025-12-23 085139" src="https://github.com/user-attachments/assets/bbab9dea-0752-4370-8c9d-44c6ecd58c1f" />
 
 
 
-<h3> Next we will create a virtual machine within our azure account put it in its appropriate subscription and resource group, be sure to have the following settings and also set a safe username and password for future reference.</h3>
+<h2>Step 1: Create and Configure the Azure Virtual Machine</h2>
+ -Create a virtual machine within our azure account put it in its appropriate subscription and resource group, be sure to have the following settings and also set a safe username and password for future reference.
 
-<img width="50%" height="50%" alt="Screenshot 2026-01-13 081342" src="https://github.com/user-attachments/assets/efcc6fbc-7d97-4793-b588-61a3777e84f9" />
-
-
- - OS: Windows 10
+ - OS: Windows 11
 
   - vCPUs:4
 
@@ -59,14 +46,28 @@ You can find all the necessary installation files for this project below:
 
   - Password:
   
+<img width="50%" height="50%" alt="Screenshot 2026-01-13 081342" src="https://github.com/user-attachments/assets/efcc6fbc-7d97-4793-b588-61a3777e84f9" />
 
-<h3> Now that we have created the windows virtual machine we take the public ip address and use remote desktop to connect to it you can access the remote desktop option by searching for it on under the windows tab on your desktop, Copy and paste the i.p address from the windows Vm we do that by navigating to the azure portal and looking under the virtual machines tab.</h3>
+
+
+
+
+Now that we have created the windows virtual machine we take the public ip address and use remote desktop to connect to it you can access the remote desktop option by searching for it on under the windows tab on your desktop, Copy and paste the i.p address from the windows Vm we do that by navigating to the azure portal and looking under the virtual machines tab.
 
   
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 090926" src="https://github.com/user-attachments/assets/6108a7ba-bd44-4bb3-8aff-bbe8522593d7" />
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 092735" src="https://github.com/user-attachments/assets/cf9dab37-40b3-48bd-9e29-b416922dbafa" />
 
-<h3>Next we will Install / Enable IIS in Windows WITH CGI by navigating to the control panel on our windows virtual machine this will allow us to use our virtual machine as a web server for os-ticket.</h3>
+<h2>Step 2: Prepare the Virtual Machine</h2>
+-After successfully remote connecting to our windows VM we will download the installation files from the link above to our desktop
+- Extract the files into a folder named `osTicket-Installation-Files` on the desktop.
+
+<h2>Step 3. Install and Enable IIS with CGI</h2>
+1. Open **Control Panel** -> **Programs** -> **Turn Windows features on or off
+
+2. Enable the following:
+   - **Internet Information Services (IIS)**
+   - **World Wide Web Services** -> **Application Development Features** -> **[X] CGI**
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 154456" src="https://github.com/user-attachments/assets/2891c3cf-ade6-4821-8bda-f5a651c4e28b" />
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 155008" src="https://github.com/user-attachments/assets/dc9f59f3-9f8b-475b-b894-56a6c4628397" />
@@ -74,9 +75,9 @@ You can find all the necessary installation files for this project below:
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 155306" src="https://github.com/user-attachments/assets/01652198-1021-4263-929d-43e00240c22b" />
 
 
-<h3>Next we will install PHP manager</h3>
+<h2>Step:3 install PHP manager</h2>
 
--Create the directory C:\PHP.
+-##Create the directory C:\PHP.
 
 -Extract PHP files into C:\PHP directory.
 
@@ -89,17 +90,21 @@ You can find all the necessary installation files for this project below:
 <img width="50%" height="50%" alt="day1" src="https://github.com/user-attachments/assets/40a0af56-b5d1-408d-98a3-ef65ef9fdcc7" />
 <img width="50%" height="50%" alt="day 2" src="https://github.com/user-attachments/assets/820b9b79-119a-45d8-926e-05459e509aca" />
 
-<h3>Now we will install URL Rewrite Module</h3>
+<h3> Step 4: Install URL Rewrite Module</h3>
 
-Implemented URL Rewrite rules in IIS to transform complex application URLs into clean, user-friendly routes, improving usability, maintainability, and search engine optimization while preserving existing application functionality.
 <img width="50%" height="50%" alt="day3" src="https://github.com/user-attachments/assets/5567e8c3-d65b-4950-8686-d578cc8d91c8" />
 
-<h3>Next Create the directory PHP on the windowns virtual machines C:Drive like so.</h3>
+<h3>Step 5: Set Up PHP.</h3>
+1. Create the directory `C:\PHP`.
+
+2. Extract `PHP 7.3.8` (`php-7.3.8-nts-Win32-VC15-x86.zip`) into the `C:\PHP` folder
+
+3. Install **VC_redist.x86.exe**.
+
 
 <img width="50%" height="50%" alt="day4" src="https://github.com/user-attachments/assets/782376bb-c813-4a6e-9a4c-6828b0b24284" />
 <img width="50%" height="50%" alt="DAY5" src="https://github.com/user-attachments/assets/a46e099d-9003-49ef-9711-36f15cabf9db" />
 
-<h3>Now we will extract the php manager files onto the folder named PHP we created earlier on the C:drive of our windows virtual machine.</h3>
 
 <img width="50%" height="50%" alt="Day6" src="https://github.com/user-attachments/assets/59af6bfc-825f-42a0-bbb3-df07f802fd25" /> 
 
