@@ -108,10 +108,10 @@ Now that we have created the windows virtual machine we take the public ip addre
 
 <img width="50%" height="50%" alt="Day6" src="https://github.com/user-attachments/assets/59af6bfc-825f-42a0-bbb3-df07f802fd25" /> 
 
-<h3>The following step is to install Microsoft vc++</h3>
+<h2>The following step is to install Microsoft vc++</h2>
 
 Configured the Windows Server environment with the appropriate Microsoft Visual C++ runtime libraries required by the PHP version used by osTicket, enabling reliable application operation and extension compatibility.
-<img width="1462" height="770" alt="day7" src="https://github.com/user-attachments/assets/74265067-733c-4223-bd97-2c9bbbfa2cdd" />
+<img width="50%" height="50%" alt="day7" src="https://github.com/user-attachments/assets/74265067-733c-4223-bd97-2c9bbbfa2cdd" />
 
 <h3>Another dependency we need to install is MySQL server</h3> 
 <ul>
@@ -119,40 +119,40 @@ Configured the Windows Server environment with the appropriate Microsoft Visual 
     </ul>
   </li>
 
-<img width="1507" height="792" alt="Screenshot 2026-01-29 145223" src="https://github.com/user-attachments/assets/660f5b94-1f5d-4379-bf41-30d4c274016a" />
-<img width="980" height="627" alt="Screenshot 2026-01-29 145533" src="https://github.com/user-attachments/assets/3b67c008-74be-4eea-9f2c-0229659f9134" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-29 145223" src="https://github.com/user-attachments/assets/660f5b94-1f5d-4379-bf41-30d4c274016a" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-29 145533" src="https://github.com/user-attachments/assets/3b67c008-74be-4eea-9f2c-0229659f9134" />
 
 <img width="856" height="602" alt="Screenshot 2026-01-29 145854" src="https://github.com/user-attachments/assets/9e1da928-b1dc-4ebb-bbb0-ae388698ff0e" />
 
-<img width="1252" height="852" alt="Screenshot 2026-01-29 150206" src="https://github.com/user-attachments/assets/dc4a570c-ea3f-4f13-a223-69d0ae2a8151" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-29 150206" src="https://github.com/user-attachments/assets/dc4a570c-ea3f-4f13-a223-69d0ae2a8151" />
 <h3>Now that we have installed MySQL server we will open IIS as as admin on our virtual machine to register PHP Within IIS</h3>
-<img width="1451" height="747" alt="qwewert" src="https://github.com/user-attachments/assets/b3fd19d4-5232-4179-b777-ea198223576e" />
+<img width="50%" height="50%" alt="qwewert" src="https://github.com/user-attachments/assets/b3fd19d4-5232-4179-b777-ea198223576e" />
 
-<img width="1436" height="747" alt="assddd" src="https://github.com/user-attachments/assets/dfdadd3d-4001-4da8-b4b4-62f2c588fd4b" />
-<img width="1032" height="482" alt="v" src="https://github.com/user-attachments/assets/f785de48-b9dc-479c-a4fe-d6466c1bdffc" />
-<img width="1037" height="691" alt="r" src="https://github.com/user-attachments/assets/a6aba362-c9eb-43d0-be0c-b20e5c81fbe0" />
-<img width="1028" height="637" alt="Screenshot 2026-01-30 153733" src="https://github.com/user-attachments/assets/05c11e74-44f8-49f7-b29f-fdd07bd81678" />
+<img width="50%" height="50%" alt="assddd" src="https://github.com/user-attachments/assets/dfdadd3d-4001-4da8-b4b4-62f2c588fd4b" />
+<img width="50%" height="50%" alt="v" src="https://github.com/user-attachments/assets/f785de48-b9dc-479c-a4fe-d6466c1bdffc" />
+<img width="50%" height="50%" alt="r" src="https://github.com/user-attachments/assets/a6aba362-c9eb-43d0-be0c-b20e5c81fbe0" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-30 153733" src="https://github.com/user-attachments/assets/05c11e74-44f8-49f7-b29f-fdd07bd81678" />
 
 
 <h3>Now we will restart IIS (Stop and restart the web server)</h3>
 
-<img width="1461" height="764" alt="Screenshot 2026-01-30 155432" src="https://github.com/user-attachments/assets/524fea0e-3071-47f0-8c21-8bce85829898" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-30 155432" src="https://github.com/user-attachments/assets/524fea0e-3071-47f0-8c21-8bce85829898" />
 
 <h3>Now that we have registered PHP within IIS on our windows virtual machine we will begin installing OsTicket (Ticketing software we will be using for end users)</h3>
-<img width="1033" height="752" alt="Screenshot 2026-01-30 160300" src="https://github.com/user-attachments/assets/15dad024-bcc3-4935-bd28-bf1fe7bc002b" />
+<img width="50" height="50%" alt="Screenshot 2026-01-30 160300" src="https://github.com/user-attachments/assets/15dad024-bcc3-4935-bd28-bf1fe7bc002b" />
 
 
 <h3>Next we will take this upload folder that came with Osticket installation files and copy it into c:\inetpub\wwwroot folder</h3>
 
-<img width="1457" height="780" alt="Screenshot 2026-01-30 161457" src="https://github.com/user-attachments/assets/93351bd1-77ad-47ca-b551-b161ab31a223" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-30 161457" src="https://github.com/user-attachments/assets/93351bd1-77ad-47ca-b551-b161ab31a223" />
 
-<img width="1442" height="751" alt="Screenshot 2026-01-30 161608" src="https://github.com/user-attachments/assets/cf61823d-fbd2-412f-bd94-2b2eed44bb50" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-30 161608" src="https://github.com/user-attachments/assets/cf61823d-fbd2-412f-bd94-2b2eed44bb50" />
 
-<img width="1332" height="711" alt="Screenshot 2026-01-30 162152" src="https://github.com/user-attachments/assets/38f91f6f-5c97-4f61-8e4a-5be20f1008e2" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-30 162152" src="https://github.com/user-attachments/assets/38f91f6f-5c97-4f61-8e4a-5be20f1008e2" />
 
-<img width="1758" height="792" alt="Screenshot 2026-01-30 162536" src="https://github.com/user-attachments/assets/6093108e-8036-42d9-af61-b5bdfeb6610f" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-30 162536" src="https://github.com/user-attachments/assets/6093108e-8036-42d9-af61-b5bdfeb6610f" />
 
-<img width="751" height="535" alt="Screenshot 2026-01-30 162706" src="https://github.com/user-attachments/assets/f80926f8-d2d9-40b9-b45c-f42ba8235f38" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-30 162706" src="https://github.com/user-attachments/assets/f80926f8-d2d9-40b9-b45c-f42ba8235f38" />
 
 
 <h3>After copying the upload folder to the "wwwroot" folder we will rename it to osTicket</h3>
@@ -160,12 +160,12 @@ Configured the Windows Server environment with the appropriate Microsoft Visual 
 
 <h3>Once again we will restart IIS within out Virtual Machine to actualize the few changes we made</h3> 
 
-<img width="1442" height="751" alt="Screenshot 2026-01-30 163758" src="https://github.com/user-attachments/assets/9b499f50-1312-4ac0-892b-ffa091256db2" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-30 163758" src="https://github.com/user-attachments/assets/9b499f50-1312-4ac0-892b-ffa091256db2" />
 
 <h3>Now we navigate to the osTicket website by clicking on the tab in the IIS panel like so.</h3> 
-<img width="1482" height="748" alt="g1" src="https://github.com/user-attachments/assets/bef74b02-7ba9-440a-8266-992560ae105d" />
+<img width="50%" height="50%" alt="g1" src="https://github.com/user-attachments/assets/bef74b02-7ba9-440a-8266-992560ae105d" />
 
-<img width="1267" height="1015" alt="g2" src="https://github.com/user-attachments/assets/329f504e-93cc-4bc0-9099-e283f7043179" />
+<img width="50%" height="50%" alt="g2" src="https://github.com/user-attachments/assets/329f504e-93cc-4bc0-9099-e283f7043179" />
 
 <h3>Notice some extensions arent activated yet so we will activate them by navigating to the PHP manager in the IIS tab under the osTicket folder to be able to use osTicket to its full potential.</h3>
 
