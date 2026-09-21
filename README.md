@@ -108,24 +108,44 @@ Now that we have created the windows virtual machine we take the public ip addre
 
 <img width="50%" height="50%" alt="Day6" src="https://github.com/user-attachments/assets/59af6bfc-825f-42a0-bbb3-df07f802fd25" /> 
 
-<h2>The following step is to install Microsoft vc++</h2>
 
-Configured the Windows Server environment with the appropriate Microsoft Visual C++ runtime libraries required by the PHP version used by osTicket, enabling reliable application operation and extension compatibility.
 <img width="50%" height="50%" alt="day7" src="https://github.com/user-attachments/assets/74265067-733c-4223-bd97-2c9bbbfa2cdd" />
 
-<h3>Another dependency we need to install is MySQL server</h3> 
-<ul>
-      <li>Typical Setup -> Launch Configuration Wizard -> Standard Configuration -> (create_secret_password).</li>
-    </ul>
-  </li>
+
+
+<h3> Step 6 install is MySQL server</h3>
+1. Install **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`) with the following configuration:
+
+   - Choose **Typical Setup**.
+    
+   - Launch the **Configuration Wizard** after installation.
+    
+   - Select **Standard Configuration**.
+    
+   - Set MySQL credentials:
+     
+     - Username: `root`
+      
+     - Password: `root`
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-29 145223" src="https://github.com/user-attachments/assets/660f5b94-1f5d-4379-bf41-30d4c274016a" />
 <img width="50%" height="50%" alt="Screenshot 2026-01-29 145533" src="https://github.com/user-attachments/assets/3b67c008-74be-4eea-9f2c-0229659f9134" />
 
-<img width="856" height="602" alt="Screenshot 2026-01-29 145854" src="https://github.com/user-attachments/assets/9e1da928-b1dc-4ebb-bbb0-ae388698ff0e" />
+<img width="50%" height="50%" alt="Screenshot 2026-01-29 145854" src="https://github.com/user-attachments/assets/9e1da928-b1dc-4ebb-bbb0-ae388698ff0e" />
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-29 150206" src="https://github.com/user-attachments/assets/dc4a570c-ea3f-4f13-a223-69d0ae2a8151" />
-<h3>Now that we have installed MySQL server we will open IIS as as admin on our virtual machine to register PHP Within IIS</h3>
+<h3> Step 6 </h3> 7. Configure IIS
+1. Open IIS as an Administrator.
+
+2. Register PHP:
+ 
+   - Open **PHP Manager** in IIS.
+   - Register `C:\PHP\php-cgi.exe`.
+3. Reload IIS:
+ 
+   - Open IIS.
+   - Stop and Start the server.
+
 <img width="50%" height="50%" alt="qwewert" src="https://github.com/user-attachments/assets/b3fd19d4-5232-4179-b777-ea198223576e" />
 
 <img width="50%" height="50%" alt="assddd" src="https://github.com/user-attachments/assets/dfdadd3d-4001-4da8-b4b4-62f2c588fd4b" />
@@ -134,7 +154,7 @@ Configured the Windows Server environment with the appropriate Microsoft Visual 
 <img width="50%" height="50%" alt="Screenshot 2026-01-30 153733" src="https://github.com/user-attachments/assets/05c11e74-44f8-49f7-b29f-fdd07bd81678" />
 
 
-<h3>Now we will restart IIS (Stop and restart the web server)</h3>
+
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-30 155432" src="https://github.com/user-attachments/assets/524fea0e-3071-47f0-8c21-8bce85829898" />
 
