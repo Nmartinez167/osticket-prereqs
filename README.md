@@ -22,13 +22,14 @@ You can find all the necessary installation files for this project below:
 
 
 - Azure subscription
+-  Remote Desktop Client
 - Azure Virtual Machine with the following configuration:
   - OS: Windows 10
   - vCPUs:4
   - Name: osticket-vm
   - Username:
   - Password:
-- Remote Desktop Client
+
 
 
 
@@ -52,7 +53,7 @@ You can find all the necessary installation files for this project below:
 
 
 
-Now that we have created the windows virtual machine we take the public ip address and use remote desktop to connect to it you can access the remote desktop option by searching for it on under the windows tab on your desktop, Copy and paste the i.p address from the windows Vm we do that by navigating to the azure portal and looking under the virtual machines tab.
+Now that we have created the windows virtual machine we take the public ip address and use remote desktop to connect to it, copy and paste the i.p address from the azure portal we do that by navigating to the virtual machines tab.
 
   
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 090926" src="https://github.com/user-attachments/assets/6108a7ba-bd44-4bb3-8aff-bbe8522593d7" />
@@ -75,26 +76,17 @@ Now that we have created the windows virtual machine we take the public ip addre
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 155306" src="https://github.com/user-attachments/assets/01652198-1021-4263-929d-43e00240c22b" />
 
 
-<h2>Step:3 install PHP manager</h2>
-
--##Create the directory C:\PHP.
-
--Extract PHP files into C:\PHP directory.
-
--Register PHP from within IIS.
-
--Reload IIS (Open IIS, Stop and Start the server).
-
+<h2>Step:4 install PHP manager</h2>
 
 
 <img width="50%" height="50%" alt="day1" src="https://github.com/user-attachments/assets/40a0af56-b5d1-408d-98a3-ef65ef9fdcc7" />
 <img width="50%" height="50%" alt="day 2" src="https://github.com/user-attachments/assets/820b9b79-119a-45d8-926e-05459e509aca" />
 
-<h3> Step 4: Install URL Rewrite Module</h3>
+<h3> Step 5: Install URL Rewrite Module</h3>
 
 <img width="50%" height="50%" alt="day3" src="https://github.com/user-attachments/assets/5567e8c3-d65b-4950-8686-d578cc8d91c8" />
 
-<h3>Step 5: Set Up PHP.</h3>
+<h3>Step 6: Set Up PHP.</h3>
 1. Create the directory `C:\PHP`.
 
 2. Extract `PHP 7.3.8` (`php-7.3.8-nts-Win32-VC15-x86.zip`) into the `C:\PHP` folder
@@ -113,7 +105,7 @@ Now that we have created the windows virtual machine we take the public ip addre
 
 
 
-<h3> Step 6 install is MySQL server</h3>
+<h3> Step 7 install is MySQL server</h3>
 1. Install **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`) with the following configuration:
 
    - Choose **Typical Setup**.
@@ -134,7 +126,7 @@ Now that we have created the windows virtual machine we take the public ip addre
 <img width="50%" height="50%" alt="Screenshot 2026-01-29 145854" src="https://github.com/user-attachments/assets/9e1da928-b1dc-4ebb-bbb0-ae388698ff0e" />
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-29 150206" src="https://github.com/user-attachments/assets/dc4a570c-ea3f-4f13-a223-69d0ae2a8151" />
-<h3> Step 6 </h3> 7. Configure IIS
+<h3> Step 7 </h3> . Configure IIS
 1. Open IIS as an Administrator.
 
 2. Register PHP:
@@ -152,19 +144,23 @@ Now that we have created the windows virtual machine we take the public ip addre
 <img width="50%" height="50%" alt="v" src="https://github.com/user-attachments/assets/f785de48-b9dc-479c-a4fe-d6466c1bdffc" />
 <img width="50%" height="50%" alt="r" src="https://github.com/user-attachments/assets/a6aba362-c9eb-43d0-be0c-b20e5c81fbe0" />
 <img width="50%" height="50%" alt="Screenshot 2026-01-30 153733" src="https://github.com/user-attachments/assets/05c11e74-44f8-49f7-b29f-fdd07bd81678" />
+<h3>Step 8. Install osTicket</h3>
 
 
-
-
-<img width="50%" height="50%" alt="Screenshot 2026-01-30 155432" src="https://github.com/user-attachments/assets/524fea0e-3071-47f0-8c21-8bce85829898" />
-
-<h3>Now that we have registered PHP within IIS on our windows virtual machine we will begin installing OsTicket (Ticketing software we will be using for end users)</h3>
-<img width="50" height="50%" alt="Screenshot 2026-01-30 160300" src="https://github.com/user-attachments/assets/15dad024-bcc3-4935-bd28-bf1fe7bc002b" />
-
-
-<h3>Next we will take this upload folder that came with Osticket installation files and copy it into c:\inetpub\wwwroot folder</h3>
-
-<img width="50%" height="50%" alt="Screenshot 2026-01-30 161457" src="https://github.com/user-attachments/assets/93351bd1-77ad-47ca-b551-b161ab31a223" />
+1. Extract `osTicket v1.15.8` (`osTicket-v1.15.8.zip`) from the `osTicket-Installation-Files` folder.
+2. Copy the `upload` folder to `C:\inetpub\wwwroot`.
+3. Rename the folder from `upload` to `osTicket`.
+4. Reload IIS.
+5. In IIS:
+   - Navigate to **Sites** -> **Default** -> **osTicket**.
+   - On the right-hand side, click **Browse *:80**.
+6. Address missing extensions:
+   - Navigate to **PHP Manager** in IIS.
+   - Enable the following extensions:
+     - `php_imap.dll`
+     - `php_intl.dll`
+     - `php_opcache.dll`
+7. Refresh the osTicket site in your browser.
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-30 161608" src="https://github.com/user-attachments/assets/cf61823d-fbd2-412f-bd94-2b2eed44bb50" />
 
@@ -174,31 +170,20 @@ Now that we have created the windows virtual machine we take the public ip addre
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-30 162706" src="https://github.com/user-attachments/assets/f80926f8-d2d9-40b9-b45c-f42ba8235f38" />
 
-
-<h3>After copying the upload folder to the "wwwroot" folder we will rename it to osTicket</h3>
-<img width="50%" height="50%" alt="Screenshot 2026-01-30 163200" src="https://github.com/user-attachments/assets/d3152bc3-4a26-4b6e-b770-638a2e7fd360" />
-
-<h3>Once again we will restart IIS within out Virtual Machine to actualize the few changes we made</h3> 
-
 <img width="50%" height="50%" alt="Screenshot 2026-01-30 163758" src="https://github.com/user-attachments/assets/9b499f50-1312-4ac0-892b-ffa091256db2" />
 
-<h3>Now we navigate to the osTicket website by clicking on the tab in the IIS panel like so.</h3> 
+
+
+
 <img width="50%" height="50%" alt="g1" src="https://github.com/user-attachments/assets/bef74b02-7ba9-440a-8266-992560ae105d" />
 
 <img width="50%" height="50%" alt="g2" src="https://github.com/user-attachments/assets/329f504e-93cc-4bc0-9099-e283f7043179" />
-
-<h3>Notice some extensions arent activated yet so we will activate them by navigating to the PHP manager in the IIS tab under the osTicket folder to be able to use osTicket to its full potential.</h3>
 
 
 <img width="50%" height="50%" alt="g3" src="https://github.com/user-attachments/assets/af5cf434-9d9a-4c55-a441-6dc92145c9c0" />
 
 <img width="50%" height="50%" alt="g4" src="https://github.com/user-attachments/assets/cd6fe3a6-4adb-44ef-8453-6626e29c6f5f" />
 
-<h3>Click “Enable or disable an extension”
-Enable: php_imap.dll
-Enable: php_intl.dll
-Enable: php_opcache.dll</h3>
- 
 <img width="50%" height="50%" alt="g6" src="https://github.com/user-attachments/assets/654f4dac-793e-412a-85a8-d2fe44c48350" />
 
  <h3>Now if we refresh the osTicket installation landing page we can see the changes were made.</h3>
