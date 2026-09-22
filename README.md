@@ -82,11 +82,11 @@ Now that we have created the windows virtual machine we take the public ip addre
 <img width="50%" height="50%" alt="day1" src="https://github.com/user-attachments/assets/40a0af56-b5d1-408d-98a3-ef65ef9fdcc7" />
 <img width="50%" height="50%" alt="day 2" src="https://github.com/user-attachments/assets/820b9b79-119a-45d8-926e-05459e509aca" />
 
-<h3> Step 5: Install URL Rewrite Module</h3>
+<h2> Step 5: Install URL Rewrite Module</h2>
 
 <img width="50%" height="50%" alt="day3" src="https://github.com/user-attachments/assets/5567e8c3-d65b-4950-8686-d578cc8d91c8" />
 
-<h3>Step 6: Set Up PHP.</h3>
+<h2>Step 6: Set Up PHP.</h2>
 1. Create the directory `C:\PHP`.
 
 2. Extract `PHP 7.3.8` (`php-7.3.8-nts-Win32-VC15-x86.zip`) into the `C:\PHP` folder
@@ -105,7 +105,7 @@ Now that we have created the windows virtual machine we take the public ip addre
 
 
 
-<h3> Step 7 install is MySQL server</h3>
+<h2> Step 7 install is MySQL server</h2>
 1. Install **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`) with the following configuration:
 
    - Choose **Typical Setup**.
@@ -144,7 +144,7 @@ Now that we have created the windows virtual machine we take the public ip addre
 <img width="50%" height="50%" alt="v" src="https://github.com/user-attachments/assets/f785de48-b9dc-479c-a4fe-d6466c1bdffc" />
 <img width="50%" height="50%" alt="r" src="https://github.com/user-attachments/assets/a6aba362-c9eb-43d0-be0c-b20e5c81fbe0" />
 <img width="50%" height="50%" alt="Screenshot 2026-01-30 153733" src="https://github.com/user-attachments/assets/05c11e74-44f8-49f7-b29f-fdd07bd81678" />
-<h3>Step 8. Install osTicket</h3>
+<h2>Step 8. Install osTicket</h2>
 
 
 1. Extract `osTicket v1.15.8` (`osTicket-v1.15.8.zip`) from the `osTicket-Installation-Files` folder.
@@ -160,7 +160,7 @@ Now that we have created the windows virtual machine we take the public ip addre
      - `php_imap.dll`
      - `php_intl.dll`
      - `php_opcache.dll`
-7. Refresh the osTicket site in your browser.
+<h2>Refresh the osTicket site in your browser.</h2>
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-30 161608" src="https://github.com/user-attachments/assets/cf61823d-fbd2-412f-bd94-2b2eed44bb50" />
 
@@ -186,17 +186,28 @@ Now that we have created the windows virtual machine we take the public ip addre
 
 <img width="50%" height="50%" alt="g6" src="https://github.com/user-attachments/assets/654f4dac-793e-412a-85a8-d2fe44c48350" />
 
- <h3>Now if we refresh the osTicket installation landing page we can see the changes were made.</h3>
+ Now if we refresh the osTicket installation landing page we can see the changes were made.
 
  
 <img width="50%" height="50%" alt="G7" src="https://github.com/user-attachments/assets/1707671a-9898-43e6-84d6-dce86a47d72f" />
 
- <h3>Now that we have enabled those extensions we go to in file explorer to C drive> osTicket> include> ost-sampleconfig.php and remove the "sample" from the name.</h3>
-
+ <h2>9. Configure osTicket</h2>
+ 
+ 
+ Rename `ost-config.php`:
+ 
+   - From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
+   
+   - To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
+ Assign permissions to `ost-config.php`:
+   - Disable inheritance -> Remove all permissions.
+   - Add new permissions: `Everyone -> Full Control`.
+ Continue setup in the browser:
+   - Name your help desk.
+   - Set a default email for receiving customer emails.
 
 <img width="50%" height="50%" alt="back2it" src="https://github.com/user-attachments/assets/95cf7d6a-f246-492e-ab19-37dc08bc99e5" /> 
 
-<h3>Next we will enable permissions to be able to create anywhere from supreme admin users to regular employees users as well.</h3>
 
 <img width="50%" height="50%" alt="ber" src="https://github.com/user-attachments/assets/1edbe768-b14b-461b-90fb-d1225a356aab" />
 
@@ -214,14 +225,28 @@ Now that we have created the windows virtual machine we take the public ip addre
 
 <h3>We gave everyone full access which is not recommended to do but for this tutorial we will give everyone full access and later set restrictions between roles,teams, etc.</h3>
 
-<h3>Now we go back to the osTicket landing page and continue our installation.</h3>
 
 <img width="50%" height="50%" alt="llllllllll" src="https://github.com/user-attachments/assets/148fac7d-3ade-4a9c-bf72-007d292dff2c" />
 
- <h3>Once you have filled out all the information for your helpdesk we will go back to our osTicket installation files and install Heidi Sql to be able to connect our database for osTicket</h3>
 
  
 <img width="50%" height="50%" alt="bbbbbb" src="https://github.com/user-attachments/assets/c6413fdf-d929-4db3-b40e-3070d1701b1b" />
+
+ 
+ <h2>10. Set Up the Database</h2>
+ 
+ Install **HeidiSQL** from the `osTicket-Installation-Files` folder.
+ 
+ Open HeidiSQL and create a new session:
+   - Username: `root`
+     
+   - Password: `root`
+ Create a database named `osTicket`.
+ Complete the setup in the browser:
+   - MySQL Database: `osTicket`
+   - MySQL Username: `root`
+   - MySQL Password: `root`
+   - Click **Install Now!**
 
 
 <img width="50%" height="50%" alt="kkkkkk" src="https://github.com/user-attachments/assets/0ee1be17-bf4a-4543-969e-fa5668e8fa7a" />
