@@ -24,7 +24,7 @@ You can find all the necessary installation files for this project below:
 - Azure subscription
 -  Remote Desktop Client
 - Azure Virtual Machine with the following configuration:
-  - OS: Windows 10
+  - OS: Windows 11
   - vCPUs:4
   - Name: osticket-vm
   - Username:
