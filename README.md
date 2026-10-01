@@ -49,6 +49,7 @@ You can find all the necessary installation files for this project below:
   
 <img width="50%" height="50%" alt="Screenshot 2026-01-13 081342" src="https://github.com/user-attachments/assets/efcc6fbc-7d97-4793-b588-61a3777e84f9" />
 
+<img width="50%" height="50%" alt="Screenshot 2026-10-01 095543" src="https://github.com/user-attachments/assets/b3d3f468-9562-4e2c-a0a2-14104fddd4df" />
 
 
 
