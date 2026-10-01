@@ -62,7 +62,11 @@ Now that we have created the windows virtual machine we take the public ip addre
 
 <h2>Step 2: Prepare the Virtual Machine</h2>
 -After successfully remote connecting to our windows VM we will download the installation files from the link above to our desktop
+
 - Extract the files into a folder named `osTicket-Installation-Files` on the desktop.
+
+<img width="50%" height="50%" alt="Screenshot 2026-10-01 081531" src="https://github.com/user-attachments/assets/ddf2e3b3-a16d-465c-b860-acc649651137" />
+
 
 <h2>Step 3. Install and Enable IIS with CGI</h2>
 1. Open **Control Panel** -> **Programs** -> **Turn Windows features on or off
