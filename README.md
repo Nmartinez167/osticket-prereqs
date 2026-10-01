@@ -81,7 +81,9 @@ Now that we have created the windows virtual machine we take the public ip addre
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 155306" src="https://github.com/user-attachments/assets/01652198-1021-4263-929d-43e00240c22b" />
 
 
-<h2>Step:4 install PHP manager</h2>
+<h2>Step:4 Install PHP manager</h2>
+
+Under the osTicket installation files install php manager
 
 
 <img width="50%" height="50%" alt="day1" src="https://github.com/user-attachments/assets/40a0af56-b5d1-408d-98a3-ef65ef9fdcc7" />
