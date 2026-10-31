@@ -2,50 +2,78 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
-You can find all the necessary installation files for this project below:  
-(https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
+
+# osTicket Help Desk Deployment on Microsoft Azure
+
+## Project Overview
+
+This project documents the deployment and configuration of osTicket, an open-source IT service management and help desk ticketing platform, using a Microsoft Azure Virtual Machine.
+
+The objective was to build a functional help desk environment, configure the required web server and database components, and verify that the application could be accessed through a web browser.
+
+This project demonstrates hands-on experience with Windows administration, cloud infrastructure, web server configuration, database management, and application deployment.
+
+## Technologies Used
+
+- Microsoft Azure – Virtual Machines and Compute
+- Windows 11 – Operating System
+- Remote Desktop Protocol (RDP) – Remote Administration
+- Internet Information Services (IIS) – Web Server
+- PHP – Application Runtime
+- MySQL – Database Management
+- HeidiSQL – Database Administration
+- osTicket – Help Desk Ticketing System
+
+## Lab Environment
+
+| Component | Configuration |
+|---|---|
+| Cloud Provider | Microsoft Azure |
+| Virtual Machine | osticket-vm |
+| Operating System | Windows 11 21H2 |
+| CPU | 4 vCPUs (confirm actual configuration) |
+| Web Server | IIS |
+| PHP | 7.3.8 |
+| Database | MySQL 5.5.62 |
+| osTicket | 1.15.8 |
+<img width="1938" height="1272" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/9bdfd374-d8aa-4654-b7c8-9beb7670dcb2" />
 
 
-<h2>Environments and Technologies Used</h2>
+> **Environment note:** This project uses legacy software versions for educational purposes. These versions are not recommended for production deployments. A production environment should use supported operating systems and application dependencies.
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
+## Prerequisites
 
-<h2>Operating Systems Used </h2>
+- Active Microsoft Azure subscription
+- Azure Resource Group
+- Windows Virtual Machine
+- Remote Desktop Client
+- IIS with CGI enabled
+- PHP installation files
+- MySQL installation files
+- osTicket installation package
+- HeidiSQL database management software
+- URL Rewrite module for IIS
 
-- Windows 11</b> (21H2)
-
-<h2>List of Prerequisites</h2>
-
-
-- Azure subscription
--  Remote Desktop Client
-- Azure Virtual Machine with the following configuration:
-  - OS: Windows 11
-  - vCPUs:2
-  - Name: osticket-vm
-  - Username:
-  - Password:
+---
 
 
 
 
 
-<h2>Step 1: Create and Configure the Azure Virtual Machine</h2>
- -Create a virtual machine within our azure account put it in its appropriate subscription and resource group, be sure to have the following settings and also set a safe username and password for future reference.
+## Step 1: Create and Configure the Azure Virtual Machine
 
- - OS: Windows 11
+1. Sign in to the Microsoft Azure Portal.
+2. Navigate to Virtual Machines.
+3. Select Create Virtual Machine.
+4. Configure the following:
+   - Virtual Machine Name: `osticket-vm`
+   - Operating System: Windows 11
+   - CPU: 4 vCPUs (verify actual VM configuration)
+   - Resource Group: Select the appropriate resource group.
+   - Subscription: Select your Azure subscription.
+5. Configure administrator credentials.
+6. Review and deploy the virtual machine.
 
-  - vCPUs:4
-
-  - Name: osticket-vm
-
-  - Username:
-
-  - Password:
   
 <img width="50%" height="50%" alt="Screenshot 2026-01-13 081342" src="https://github.com/user-attachments/assets/efcc6fbc-7d97-4793-b588-61a3777e84f9" />
 
@@ -53,27 +81,39 @@ You can find all the necessary installation files for this project below:
 
 
 
-
-Now that we have created the windows virtual machine we take the public ip address and use remote desktop to connect to it, copy and paste the i.p address from the azure portal we do that by navigating to the virtual machines tab.
-
   
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 090926" src="https://github.com/user-attachments/assets/6108a7ba-bd44-4bb3-8aff-bbe8522593d7" />
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 092735" src="https://github.com/user-attachments/assets/cf9dab37-40b3-48bd-9e29-b416922dbafa" />
 
-<h2>Step 2: Prepare the Virtual Machine</h2>
--After successfully remote connecting to our windows VM we will download the installation files from the link above to our desktop
+After deployment, retrieve the VM's public IP address and connect using Remote Desktop.
 
-- Extract the files into a folder named `osTicket-Installation-Files` on the desktop.
+**Security consideration:** Restrict inbound RDP access to a trusted IP address or use Azure Bastion instead of exposing port 3389 to the entire internet.
+
+
+## Step 2: Prepare the Virtual Machine
+
+1. Connect to the VM using Remote Desktop.
+2. Download the required installation packages.
+3. Create a folder on the desktop named:
+
+   `osTicket-Installation-Files`
+
+4. Extract the installation packages into this directory.
+
 
 <img width="50%" height="50%" alt="Screenshot 2026-10-01 081531" src="https://github.com/user-attachments/assets/ddf2e3b3-a16d-465c-b860-acc649651137" />
 
 
 <h2>Step 3. Install and Enable IIS with CGI</h2>
-1. Open **Control Panel** -> **Programs** -> **Turn Windows features on or off
+## Step 3: Install IIS and Enable CGI
 
-2. Enable the following:
-   - **Internet Information Services (IIS)**
-   - **World Wide Web Services** -> **Application Development Features** -> **[X] CGI**
+1. Open Control Panel.
+2. Navigate to Programs > Turn Windows features on or off.
+3. Enable Internet Information Services.
+4. Expand World Wide Web Services.
+5. Expand Application Development Features.
+6. Enable CGI.
+7. Apply the changes.
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 154456" src="https://github.com/user-attachments/assets/2891c3cf-ade6-4821-8bda-f5a651c4e28b" />
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 155008" src="https://github.com/user-attachments/assets/dc9f59f3-9f8b-475b-b894-56a6c4628397" />
@@ -81,15 +121,31 @@ Now that we have created the windows virtual machine we take the public ip addre
 <img width="50%" height="50%" alt="Screenshot 2026-01-15 155306" src="https://github.com/user-attachments/assets/01652198-1021-4263-929d-43e00240c22b" />
 
 
-<h2>Step:4 Install PHP manager</h2>
+IIS provides the web server functionality required to host osTicket, while CGI enables PHP execution through IIS.
 
-Under the osTicket installation files install php manager
+## Step 4: Install PHP Manager and URL Rewrite
+
+1. Install PHP Manager for IIS.
+2. Install the IIS URL Rewrite module.
+3. Open IIS Manager and verify that the modules are available.
+
+These components help configure PHP processing and URL rewriting within IIS.
 
 
 <img width="50%" height="50%" alt="day1" src="https://github.com/user-attachments/assets/40a0af56-b5d1-408d-98a3-ef65ef9fdcc7" />
 <img width="50%" height="50%" alt="day 2" src="https://github.com/user-attachments/assets/820b9b79-119a-45d8-926e-05459e509aca" />
 
-<h2> Step 5: Install URL Rewrite Module</h2>
+## Step 5: Install and Configure PHP
+
+1. Create the directory:
+
+   `C:\PHP`
+
+2. Extract the PHP installation package into this directory.
+3. Install the required Microsoft Visual C++ Redistributable.
+4. Verify that the PHP executable is available.
+5. Configure PHP through PHP Manager in IIS.
+
 
 <img width="50%" height="50%" alt="day3" src="https://github.com/user-attachments/assets/5567e8c3-d65b-4950-8686-d578cc8d91c8" />
 
@@ -133,7 +189,7 @@ Under the osTicket installation files install php manager
 <img width="50%" height="50%" alt="Screenshot 2026-01-29 145854" src="https://github.com/user-attachments/assets/9e1da928-b1dc-4ebb-bbb0-ae388698ff0e" />
 
 <img width="50%" height="50%" alt="Screenshot 2026-01-29 150206" src="https://github.com/user-attachments/assets/dc4a570c-ea3f-4f13-a223-69d0ae2a8151" />
-<h3> Step 7 </h3> . Configure IIS
+<h3> Step 8 </h3> . Configure IIS
 1. Open IIS as an Administrator.
 
 2. Register PHP:
@@ -151,7 +207,7 @@ Under the osTicket installation files install php manager
 <img width="50%" height="50%" alt="v" src="https://github.com/user-attachments/assets/f785de48-b9dc-479c-a4fe-d6466c1bdffc" />
 <img width="50%" height="50%" alt="r" src="https://github.com/user-attachments/assets/a6aba362-c9eb-43d0-be0c-b20e5c81fbe0" />
 <img width="50%" height="50%" alt="Screenshot 2026-01-30 153733" src="https://github.com/user-attachments/assets/05c11e74-44f8-49f7-b29f-fdd07bd81678" />
-<h2>Step 8. Install osTicket</h2>
+<h2>Step 9. Install osTicket</h2>
 
 
 1. Extract `osTicket v1.15.8` (`osTicket-v1.15.8.zip`) from the `osTicket-Installation-Files` folder.
@@ -198,7 +254,7 @@ Under the osTicket installation files install php manager
  
 <img width="50%" height="50%" alt="G7" src="https://github.com/user-attachments/assets/1707671a-9898-43e6-84d6-dce86a47d72f" />
 
- <h2>9. Configure osTicket</h2>
+ <h2>10. Configure osTicket</h2>
  
  
  Rename `ost-config.php`:
@@ -240,30 +296,31 @@ Under the osTicket installation files install php manager
 <img width="50%" height="50%" alt="bbbbbb" src="https://github.com/user-attachments/assets/c6413fdf-d929-4db3-b40e-3070d1701b1b" />
 
  
- <h2>10. Set Up the Database</h2>
- 
- Install **HeidiSQL** from the `osTicket-Installation-Files` folder.
- 
- Open HeidiSQL and create a new session:
-   - Username: `root`
-     
-   - Password: `root`
- Create a database named `osTicket`.
- Complete the setup in the browser:
-   - MySQL Database: `osTicket`
-   - MySQL Username: `root`
-   - MySQL Password: `root`
-   - Click **Install Now!**
+## Step 11: Configure the MySQL Database
+
+1. Install and open HeidiSQL.
+2. Create a new MySQL session.
+3. Connect using the MySQL administrator credentials.
+4. Create a database named:
+
+   `osTicket`
+
+5. Create a dedicated database user for the application.
+6. Grant the application account the privileges required on the osTicket database.
+7. Return to the osTicket installation page.
+8. Enter the database connection information:
+   - Database Name: osTicket
+   - Database Username: Dedicated application account
+   - Database Password: Securely configured password
+   - Database Host: localhost
+9. Select Install Now.
 
 
 <img width="50%" height="50%" alt="kkkkkk" src="https://github.com/user-attachments/assets/0ee1be17-bf4a-4543-969e-fa5668e8fa7a" />
 
-<h3>With heidi sql we will be able to make a connection between our database for osTicket.</h3>
-
 
 <img width="50%" height="50%" alt="fffffff" src="https://github.com/user-attachments/assets/40000d11-4b4b-4707-b811-025a57068a3e" />
 
-<h3>Now that we created a new session we will create a new database called osTicket make sure it is spelled correctly.</h3>
 
 <img width="50%" height="50%" alt="eeeeeeeeeeeee" src="https://github.com/user-attachments/assets/de13495b-80bb-4a43-931f-d8add5548d0a" />
 
