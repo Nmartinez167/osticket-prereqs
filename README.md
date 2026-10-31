@@ -36,7 +36,7 @@ This project demonstrates hands-on experience with Windows administration, cloud
 | PHP | 7.3.8 |
 | Database | MySQL 5.5.62 |
 | osTicket | 1.15.8 |
-<img width="1938" height="1272" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/9bdfd374-d8aa-4654-b7c8-9beb7670dcb2" />
+<img width="50%" height="50%" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/9bdfd374-d8aa-4654-b7c8-9beb7670dcb2" />
 
 
 > **Environment note:** This project uses legacy software versions for educational purposes. These versions are not recommended for production deployments. A production environment should use supported operating systems and application dependencies.
